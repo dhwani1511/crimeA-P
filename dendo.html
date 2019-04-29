@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href=" ">
+<title>Crime Analysis and Prediction</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/custom.css" rel="stylesheet">
+
+<!-- Helper Styles -->
+<link href="css/loaders.css" rel="stylesheet">
+<link href="css/swiper.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+<!-- Font Awesome Style -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+
+  body{
+  background: #000;
+  padding-top: 10px;
+} 
+
+#typ{
+  color: lime; 
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:2.6em;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+      text-shadow: 0 0 5px #4D0B0D;
+
+}
+
+#mycolor{
+  background-color:   #33001a;
+  /*opacity: 0.8;*/
+}
+
+#typ:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+#typ a{
+  color: lime;
+  text-decoration: none;
+}
+
+#typ1{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: 0.5;}
+}
+
+::selection{
+  background: black;
+}
+.links{
+text-align: center;
+padding-top:1%;
+}
+.fa{
+  font-size: 100%;
+  color:#D69A9A;
+ 
+}
+.link1{
+  padding-left: 4%;
+
+}
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+  padding-bottom: 0.2em;
+  margin-top: 8%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+padding-left: 27%;
+/*padding-top: 0%;*/
+  /*cursor: pointer;*/
+  margin: 8px;
+  /*transform: scale(1.5);*/
+  /*border-radius: ;*/
+}
+
+</style>
+</head>
+<body style="    background: linear-gradient(to right, #0f0c29, #a14c4e, #24243e); ">
+
+<!-- Top Navigation -->
+    <nav id="mycolor" class="navbar navbar-toggleable-md mb-4 top-bar navbar-static-top sps sps--abv">
+       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Crime<span style="color: #BF191C">A&P</span></a>
+        <ul class="navbar-nav ml-auto">
+         <li class="nav-item "> <a  style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="#myCarousel">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="#benefits">History</a> </li>
+        <li class="nav-item"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="#about">Our Work</a> </li>
+        <li class="nav-item dropdown"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#contact">Visualization</a> 
+          <div class="dropdown-menu">
+        <a class="dropdown-item" href="pie1.html">Pie Chart</a>
+        <a class="dropdown-item" href="correl.html">Correlation Matrix</a>
+        <a class="dropdown-item" href="dendo.html">Dendogram</a>
+        <a class="dropdown-item" href="bar.html">Bar Graph</a>
+       
+       <!-- <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+       -->  
+      </div></li>
+        <li class="nav-item "> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="visual.html">Analysis</a> </li>
+        <li class="nav-item"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="prediction.html">Prediction</a> </li>
+        </ul>
+           </nav>
+
+    <div class="container">
+
+<h2 style="padding-top: 2%; text-decoration: uppercase; font-weight: bold;color: white; ">Dendogram</h2>
+  <img src="plot/dendo.png" alt="">
+
+      </div>
+
+<!-- Swiper Silder
+    ================================================== --> 
+<!-- Slider main container -->
+
+
+<script src="js/jquery.min.js" ></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/scrollPosStyler.js"></script> 
+<script src="js/swiper.min.js"></script> 
+<script src="js/isotope.min.js"></script> 
+<script src="js/nivo-lightbox.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/core.js"></script> 
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

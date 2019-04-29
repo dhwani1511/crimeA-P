@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href=" ">
+<title>Crime Analysis and Prediction</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/custom.css" rel="stylesheet">
+
+<!-- Helper Styles -->
+<link href="css/loaders.css" rel="stylesheet">
+<link href="css/swiper.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+<!-- Font Awesome Style -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+
+  body{
+  background: #000;
+  padding-top: 10px;
+} 
+
+#typ{
+  color: lime; 
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:2.6em;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+      text-shadow: 0 0 5px #4D0B0D;
+
+}
+
+#mycolor{
+  background-color:   #33001a;
+  /*opacity: 0.8;*/
+}
+
+#typ:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+#typ a{
+  color: lime;
+  text-decoration: none;
+}
+
+#typ1{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: 0.5;}
+}
+
+::selection{
+  background: black;
+}
+.links{
+text-align: center;
+padding-top:1%;
+}
+.fa{
+  font-size: 100%;
+  color:#D69A9A;
+ 
+}
+.link1{
+  padding-left: 4%;
+
+}
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+  padding-bottom: 0.2em;
+  margin-top: 8%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+padding-left: 7%;
+padding-top: 0%;
+  /*cursor: pointer;*/
+  margin: 10px;
+}
+
+
+/*Styling Selectbox*/
+.dropdown1 {
+  width: 300px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  transition: all .5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  height: 100%;
+  text-align: left
+}
+.dropdown1 .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+.dropdown1 .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+.dropdown1:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+.dropdown1:active {
+    background-color: #f8f8f8
+}
+.dropdown1.active:hover,
+.dropdown1.active {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 5px 5px 0 0;
+    background-color: #f8f8f8
+}
+.dropdown1.active .select > i {
+    transform: rotate(-90deg)
+}
+.dropdown1 .dropdown-menu1 {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    /*margin-top: 1px;*/
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+}
+.dropdown1 .dropdown-menu1 li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+.dropdown1 .dropdown-menu1 {
+    padding: 0;
+    list-style: none
+}
+.dropdown1 .dropdown-menu1 li:hover {
+    background-color: #f2f2f2
+}
+.dropdown1 .dropdown-menu1 li:active {
+    background-color: #e2e2e2
+}
+
+.divs{
+  color: white;
+  padding-top: 4%;
+  font-size: 30px;
+  text-align:center;
+  text-decoration: uppercase;
+  /*font-weight: bold;*/
+}
+</style>
+</head>
+<body style="    background: linear-gradient(to right, #0f0c29, #a14c4e, #24243e); ">
+
+<!-- Top Navigation -->
+    <nav id="mycolor" class="navbar navbar-toggleable-md mb-4 top-bar navbar-static-top sps sps--abv">
+       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Crime<span style="color: #BF191C">A&P</span></a>
+        <ul class="navbar-nav ml-auto">
+         <li class="nav-item "> <a  style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="index.html">History</a> </li>
+        <li class="nav-item"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="index.html">Our Work</a> </li>
+        <li class="nav-item dropdown"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#contact">Visualization</a> 
+          <div class="dropdown-menu">
+        <a class="dropdown-item" href="pie1.html">Pie Chart</a>
+        <a class="dropdown-item" href="correl.html">Correlation Matrix</a>
+        <a class="dropdown-item" href="dendo.html">Dendogram </a>
+       <!-- <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+       -->  
+      </div></li>
+        <li class="nav-item "> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="visual.html">Analysis</a> </li>
+        <li class="nav-item"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="prediction.html">Prediction</a> </li>
+        </ul>
+           </nav>
+
+<div class="container">
+  <br>
+    <h2 class="choose" style="color: white;margin-top:10%;">Choose Data for to view Predicted Range</h2>
+  
+      <div style="margin-left: 37%;" class="dropdown1">
+        <div class="select">
+          <span>Select choice</span>
+          <i class="fa fa-chevron-left"></i>
+        </div>
+        <input type="hidden" name="gender">
+        <ul class="dropdown-menu1">
+           <li value="1"> Rape Statistics(2019) </li>
+          <li value="2">Insult Statistics(2019)</li>
+          <li value="3">Cruelty Statistics(2019)</li>
+          <!-- <li value="plot/assault2001.html">Assault Statistics(2019)</li> -->
+          <!-- <li value="plot/dowry2001.html">Dowry(2001) Statistics</li> -->
+          <li value="4">Kidnapping(2019) Statistics</li>
+          <li value="5">Importation(2019) Statistics</li>
+
+          <li value="6"> Rape Statistics(2020) </li>
+          <li value="7">Insult Statistics(2020)</li>
+          <li value="8">Cruelty Statistics(2020)</li>
+          <!-- <li value="plot/assault2001.html">Assault Statistics(2019)</li> -->
+          <!-- <li value="plot/dowry2001.html">Dowry(2001) Statistics</li> -->
+          <li value="9">Kidnapping(2020) Statistics</li>
+          <li value="10">Importation(2020) Statistics</li>
+              
+          </ul>
+      </div>
+  <div>
+    
+<div class="divs" id="div1" style="display: none">
+        Range is 30500-32500
+    </div>
+     <div class="divs" id="div2" style="display: none">
+      Range is 2000-14000
+    </div>
+    <div class="divs" id="div3" style="display: none">
+      Range is 130000-170000
+    </div>
+     <div class="divs" id="div4" style="display: none">
+      Range is 42000-69000
+    </div>
+   <div class="divs" id="div5" style="display: none">
+      Range is 0-200
+    </div>
+   
+    </div>
+ </div>
+
+<!-- Swiper Silder
+    ================================================== --> 
+<!-- Slider main container -->
+
+
+<script src="js/jquery.min.js" ></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/scrollPosStyler.js"></script> 
+<script src="js/swiper.min.js"></script> 
+<script src="js/isotope.min.js"></script> 
+<script src="js/nivo-lightbox.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/core.js"></script> 
+<script>
+ /*Dropdown Menu*/
+$('.dropdown1').click(function () {
+        $(this).attr('tabindex', 1).focus();
+        $(this).toggleClass('active');
+        $(this).find('.dropdown-menu1').slideToggle(300);
+    });
+    $('.dropdown1').focusout(function () {
+        $(this).removeClass('active');
+        $(this).find('.dropdown-menu1').slideUp(300);
+    });
+    $('.dropdown1 .dropdown-menu1 li').click(function () {
+        $(this).parents('.dropdown1').find('span').text($(this).text());
+        $(this).parents('.dropdown1').find('input').attr('value', $(this).attr('id'));
+    });
+/*End Dropdown Menu*/
+
+
+// $('.dropdown-menu li').click(function () {
+//   var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
+//       msg = '<span class="msg">Hidden input value: ';
+//   $('.msg').html(msg + input + '</span>');
+// }); 
+
+  
+      $('li').click(function () {
+        if(this.value=="1"){
+          $("#div1").show(); 
+         $("#div2").hide();
+          $("#div3").hide();
+          // $("#div2").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+           $("#div9").hide();
+            $("#div10").hide();
+        
+        }
+        else if (this.value=="2") {
+          $("#div2").show();
+          $("#div1").hide();
+          $("#div3").hide();
+          // $("#div2").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+           $("#div9").hide();
+            $("#div10").hide();
+        
+        }
+        else if (this.value=="3"){
+          $("#div3").show();
+          $("#div1").hide();
+          $("#div2").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+           $("#div9").hide();
+            $("#div10").hide();
+        
+        }
+         else if (this.value=="4"){
+         $("#div4").show();
+         $("#div1").hide();
+         $("#div2").hide();
+          $("#div3").hide();
+          $("#div5").hide();
+
+          $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+           $("#div9").hide();
+            $("#div10").hide();
+        
+        }
+        else if(this.value=="5"){
+            $("#div5").show();
+            $("#div1").hide();
+         $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+            $("#div6").hide();
+          $("#div7").hide();
+          $("#div8").hide();
+           $("#div9").hide();
+            $("#div10").hide();
+        
+        }
+else if(this.value=="6"){
+            $("#div6").show();
+            $("#div1").hide();
+         $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+          $("#div8").hide();
+          $("#div10").hide();
+           $("#div9").hide();
+            $("#div7").hide();
+        
+        }
+else if(this.value=="7"){
+            $("#div7").show();
+            $("#div1").hide();
+         $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+          $("#div5").hide();
+         $("#div6").hide();
+          $("#div8").hide();
+          $("#div10").hide();
+           $("#div9").hide();
+       
+         
+        }
+else if(this.value=="8"){
+            $("#div8").show();
+            $("#div1").hide();
+         $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+           $("#div5").hide();
+         $("#div6").hide();
+          $("#div7").hide();
+             $("#div10").hide();
+           $("#div9").hide();
+       
+        
+        }
+else if(this.value=="9"){
+            $("#div9").show();
+            $("#div1").hide();
+         $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+            $("#div5").hide();
+         $("#div6").hide();
+          $("#div7").hide();
+           $("#div8").hide();
+        $("#div10").hide();
+           
+        }
+else {
+            $("#div10").show();
+            $("#div1").hide();
+         $("#div2").hide();
+          $("#div3").hide();
+          $("#div4").hide();
+              $("#div5").hide();
+         $("#div6").hide();
+          $("#div7").hide();
+           $("#div8").hide();
+           $("#div9").hide();
+        }
+
+        // $("#iframeId").attr("src", $(this).attr("value"));
+    });
+
+  </script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

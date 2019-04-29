@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href=" ">
+<title>Crime Analysis and Prediction</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/custom.css" rel="stylesheet">
+
+<!-- Helper Styles -->
+<link href="css/loaders.css" rel="stylesheet">
+<link href="css/swiper.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+<!-- Font Awesome Style -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+
+  body{
+  background: #000;
+  padding-top: 10px;
+} 
+
+#typ{
+  color: lime; 
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:2.6em;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+      text-shadow: 0 0 5px #4D0B0D;
+
+}
+
+#typ:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+#typ a{
+  color: lime;
+  text-decoration: none;
+}
+
+#typ1{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+.links{
+text-align: center;
+padding-top:1%;
+}
+.fa{
+  font-size: 100%;
+  color:#D69A9A;
+ 
+}
+.link1{
+  padding-left: 4%;
+
+}
+
+</style>
+</head>
+<body>
+<div class="loader loader-bg">
+  <div class="loader-inner ball-clip-rotate-pulse">
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<!-- Top Navigation -->
+    <nav class="navbar navbar-toggleable-md mb-4 top-bar navbar-static-top sps sps--abv">
+       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Crime<span style="color: #BF191C">A&P</span></a>
+        <ul class="navbar-nav ml-auto">
+         <li class="nav-item "> <a  style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="#myCarousel">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="#benefits">History</a> </li>
+        <li class="nav-item"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="#about">Our Work</a> </li>
+        <li class="nav-item dropdown"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#contact">Visualization</a> 
+          <div class="dropdown-menu">
+        <a class="dropdown-item" href="pie1.html">Pie Chart</a>
+        <a class="dropdown-item" href="correl.html">Correlation Matrix</a>
+        <a class="dropdown-item" href="dendo.html">Dendogram </a>
+       <a class="dropdown-item" href="bar.html">Bar Graph</a>
+        <!-- <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+       -->  
+      </div></li>
+        <li class="nav-item "> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="visual.html">Analysis</a> </li>
+        <li class="nav-item"> <a style="color: white ; font-size: 1.1em; font-weight: bold;" class="nav-link" href="prediction.html">Prediction</a> </li>
+        </ul>
+           </nav>
+
+    
+<!-- Swiper Silder
+    ================================================== --> 
+<!-- Slider main container -->
+<div class="swiper-container" id="myCarousel">
+  <!-- <div class="swiper-wrapper"> -->
+    <div style="     background: linear-gradient(to right, #0f0c29, #a14c4e, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ " class="swiper-slide slider-bg-position" data-hash="slide1">
+      <h2 id="typ"style="color:white">Analysis and Prediction of Crime Against Women<span style="color:white" id="typ1">|</span></h2>
+    </div>
+     <!-- </div> -->
+  <!-- Add Pagination -->
+  <!-- <div class="swiper-pagination"></div> -->
+  <!-- Add Navigation -->
+  <!-- <div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div> -->
+  <!-- <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div> -->
+</div>
+
+<!-- Benefits
+    ================================================== -->
+<section style="background-color: #F8F8F8" class="service-sec" id="benefits">
+  <div  class="container">
+            <div class="heading text-md-center text-xs-center">
+      <h2 style="color: #731C1D">Crime in India</h2>
+    </div>
+    <div id="content" class="grid_12"><p></p></div>
+      <div id="content" class="grid_12">  
+
+        <p> India is a vast country with diverse societies. Position of women has been of great importance since ancient times in Indian culture. Unfortunately, the current scenario depicts a
+different story.<br/><br/>
+       There is also lack of awareness, inadequate infrastructure and insufficient programs in place for their safety and protection. The problem is most severe in rural areas, but some urban areas like Tier 1 cities, and surprisingly, even the capital, are recognized as high risk zones. </br> <br/> According to the National Crime Records Bureau, crime against women
+has significantly increased in recent years. It has become the most prior to the administration to enforce law and order to reduce this increasing rate of the crime against
+women. <br/></br> With the increase in the crimes against women, the question arises as to what steps can be taken to curb these ever increasing rates or help in reducing the crime rates.        </p>
+      </div>
+    </div>
+
+       
+</section>
+
+<!-- About 
+    ================================================== -->
+<section class="about-sec parallax-section" id="about">
+  <div class="container">
+    <div class="row">
+      <h1 style="padding-bottom: 0.3em; padding-left: 12em; font-weight: bold">Our Work</h1>
+
+        <p> <br/>
+        Crime against women these days is increasing at an alarming rate in almost all parts of India. Preventive measures should be taken to reduce the increasing number of cases of crime agaist women. 
+        </br> </br>In our project, we aim to  acquire information from provided data and utilize it further for
+future crime predictions and analysis with the help of which crime against women can be reduced. We have found crime hot spots and their distributions according to the different regions they take place using data mining techniques. <br/>
+        </br> We have analyzed crime data from India with the goal of gaining an insight into the nature and depth of the problem. We use data from the Open Government Data (OGD) Platform India (<a style="color: white" 
+        href="http://data.gov.in">http://data.gov.in)</a>.The dataset contains crime information of all the 28 states and 7 union territories.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG
+    ================================================== -->
+
+<!-- <section class="blog-sec" id="blog">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+    <div class="heading text-md-center text-xs-center">
+      <h2><small>Get Tips and Tricks</small>Our Blog</h2>
+    </div>
+    </div>
+      <div class="col-md-4 blog-box">
+        <div class="blog-image-block"> <img src="img/blog-01.jpg" alt="" class="img-fluid"> </div>
+        <h3 class="blog-title"><small>Tips</small><a href="#">Calm mind brings inner strength</a></h3>
+        <p class="blog-content">Our greatest happiness does not depend on the condition of life</p>
+      </div>
+      <div class="col-md-4 blog-box">
+        <div class="blog-image-block"> <img src="img/blog-02.jpg" alt="" class="img-fluid"> </div>
+        <h3 class="blog-title"><small>Benefits</small><a href="#">Happiness is nothing more than good health</a></h3>
+        <p class="blog-content">Our greatest happiness does not depend on the condition of life</p>
+      </div>
+      <div class="col-md-4 blog-box">
+        <div class="blog-image-block"> <img src="img/blog-03.jpg" alt="" class="img-fluid"> </div>
+        <h3 class="blog-title"><small>Products</small><a href="#">Being all equal and independent</a></h3>
+        <p class="blog-content">Our greatest happiness does not depend on the condition of life</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ --><!-- VIDEO
+    ================================================== -->
+<!-- <section class="video-sec parallax-section">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="wow fadeInUp" data-wow-delay="0.5s">Watch the video<small>Without health life is not life; it is only a state of langour and suffering - an image of death.</small></h2>
+        <a href="#" ><i class="fa fa-play"></i></a> <small><em>Video by: Health Tips</em></small> </div>
+    </div>
+  </div>
+</section>
+<section class="gallery-sec" id="gallery">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+    <div class="heading text-md-center text-xs-center">
+      <h2><small>Stroy Through Images</small>Fitness Image Gallery</h2>
+    </div>
+    </div>
+      <div class="col-md-12"> 
+ -->        <!-- iso section -->
+<!--         <div class="iso-section text-md-center text-xs-center" data-wow-delay="0.5">
+          <ul class="filter-wrapper clearfix">
+            <li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
+            <li><a href="#" class="opc-main-bg" data-filter=".london">London</a></li>
+            <li><a href="#" class="opc-main-bg" data-filter=".paris">Paris</a></li>
+            <li><a href="#" class="opc-main-bg" data-filter=".ny">New York</a></li>
+            <li><a href="#" class="opc-main-bg" data-filter=".hn">Hong Kong</a></li>
+          </ul>
+          
+ -->          <!-- iso box section -->
+           <!--<div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
+            <div class="iso-box-wrapper col4-iso-box">
+              <div class="iso-box london paris ny col-md-4 col-sm-6">
+                <div class="gallery-thumb"> <a href="img/photo-gallery-01.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-01.jpg" class="fluid-img" alt="Gallery">
+                  <div class="gallery-overlay">
+                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                  </div>
+                  </a> </div>
+              </div>
+              <div class="iso-box london ny hn col-md-4 col-sm-6">
+                <div class="gallery-thumb"> <a href="img/photo-gallery-02.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-02.jpg" class="fluid-img" alt="Gallery">
+                  <div class="gallery-overlay">
+                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                  </div>
+                  </a> </div>
+              </div>
+              <div class="iso-box hn col-md-4 col-sm-6">
+                <div class="gallery-thumb"> <a href="img/photo-gallery-03.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-03.jpg" class="fluid-img" alt="Gallery">
+                  <div class="gallery-overlay">
+                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                  </div>
+                  </a> </div>
+              </div>
+              <div class="iso-box london col-md-4 col-sm-6">
+                <div class="gallery-thumb"> <a href="img/photo-gallery-04.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-04.jpg" class="fluid-img" alt="Gallery">
+                  <div class="gallery-overlay">
+                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                  </div>
+                  </a> </div>
+              </div>
+              <div class="iso-box ny col-md-4 col-sm-6">
+                <div class="gallery-thumb"> <a href="img/photo-gallery-05.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-05.jpg" class="fluid-img" alt="Gallery">
+                  <div class="gallery-overlay">
+                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                  </div>
+                  </a> </div>
+              </div>
+              <div class="iso-box paris lunch col-md-4 col-sm-6">
+                <div class="gallery-thumb"> <a href="img/photo-gallery-06.jpg" data-lightbox-gallery="food-gallery"> <img src="img/photo-gallery-06.jpg" class="fluid-img" alt="Gallery">
+                  <div class="gallery-overlay">
+                    <div class="gallery-item"> <i class="fa fa-search"></i> </div>
+                  </div>
+                  </a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+<!-- <section  class="contact-sec" id="contact">
+  <div  class="container">
+    <h2 style="color: #731C1D;font-weight: bold;padding-bottom: 0.3em; padding-left: 14em; ">Get in Touch  </h2>
+    <br><br><div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label style="color: #731C1D" for="exampleName">Name</label>
+          <input type="text" class="form-control" id="exampleName" aria-describedby="emailHelp">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label style="color: #731C1D" for="examplePhone">Phone Number</label>
+          <input type="text" class="form-control" id="examplePhone" aria-describedby="emailHelp">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div style="color: #731C1D" class="form-group">
+          <label style="color: #731C1D" for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted"><p style="color: #731C1D">We'll never share your email with anyone else.</p></small> </div>
+      </div>
+      <div class="col-md-12">
+        <label style="color: #731C1D" for="exampleTextarea">Enter your Message</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </div>
+      <div class="col-md-12 text-xs-center action-block"> <a style="color: white; background-color:#731C1D " href="#" class="btn btn-capsul btn-aqua">Submit</a> </div>
+    </div>
+  </div>
+</section> -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-4">
+        <ul style="text">
+          <!-- <li><a href="#">Analysis</a></li> -->
+          <!-- <li><a href="#">Prediction</a></li> -->
+          <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+      </div>
+      <div class="col-md-2 col-sm-4">
+        <ul>
+         <!--  <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Term and Services</a></li>
+          <li><a href="#">About Burnout</a></li>
+         --></ul>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <!-- <h2>About our Blog</h2> -->
+        <!-- <p>To enjoy good health, to bring true happiness to one's family, to bring peace to all, one must first discipline and control one's own mind. If a man can control his mind he can find the way to Enlightenment.</p> -->
+      </div>
+    </div>
+    <div class="row copy-footer">
+      <!-- <div class="col-sm-6 col-md-3"> &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> <a target="_blank" rel="nofollow" href="https://grafreez.com/"></a> Grafreez.com </div> -->
+      <!-- <div class="col-sm-6 col-md-3 pull-right text-xs-right">Created with <i class="fa fa-heart"></i></div> -->
+    </div>
+  </div>
+ </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/jquery.min.js" ></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/scrollPosStyler.js"></script> 
+<script src="js/swiper.min.js"></script> 
+<script src="js/isotope.min.js"></script> 
+<script src="js/nivo-lightbox.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/core.js"></script> 
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
