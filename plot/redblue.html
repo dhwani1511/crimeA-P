@@ -1,0 +1,5245 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_20de6771ac3c478aa57efbb1b6da762e {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_20de6771ac3c478aa57efbb1b6da762e" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_20de6771ac3c478aa57efbb1b6da762e = L.map(
+        'map_20de6771ac3c478aa57efbb1b6da762e', {
+        center: [15.9129, 79.74],
+        zoom: 7,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_aa109466430e47b3a41c66341f6548c6 = L.tileLayer(
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+    
+            var circle_marker_bc55455d39e44f22ae89b23ab8232b72 = L.circleMarker(
+                [19.28451395, 78.81321233],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_0a05610dace2414981c43b3a3a78de0c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_458e0bb483ba448aa7cdf4c60823c155 = $(`<div id="html_458e0bb483ba448aa7cdf4c60823c155" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ADILABAD<br>                 Total Crimes : 454<br></div>`)[0];
+                popup_0a05610dace2414981c43b3a3a78de0c.setContent(html_458e0bb483ba448aa7cdf4c60823c155);
+            
+
+            circle_marker_bc55455d39e44f22ae89b23ab8232b72.bindPopup(popup_0a05610dace2414981c43b3a3a78de0c)
+            ;
+
+            
+        
+    
+            var circle_marker_b0164ce72116443498aeb0090d583180 = L.circleMarker(
+                [14.31206556, 77.46015845],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_97f3f74789014403b1810627bf4ee800 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1c878ab9b7c447c38601f41b0e50b4f7 = $(`<div id="html_1c878ab9b7c447c38601f41b0e50b4f7" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ANANTAPUR<br>                 Total Crimes : 356<br></div>`)[0];
+                popup_97f3f74789014403b1810627bf4ee800.setContent(html_1c878ab9b7c447c38601f41b0e50b4f7);
+            
+
+            circle_marker_b0164ce72116443498aeb0090d583180.bindPopup(popup_97f3f74789014403b1810627bf4ee800)
+            ;
+
+            
+        
+    
+            var circle_marker_e8d4d2c3b3eb4e23a8e0d9820946dd4f = L.circleMarker(
+                [13.33109263, 78.92763899],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_edbccd0fc5584046b86e0f1cb9a90b3f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b54a7cbc1d8b407a9b587bb4fccd0e27 = $(`<div id="html_b54a7cbc1d8b407a9b587bb4fccd0e27" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CHITTOOR<br>                 Total Crimes : 456<br></div>`)[0];
+                popup_edbccd0fc5584046b86e0f1cb9a90b3f.setContent(html_b54a7cbc1d8b407a9b587bb4fccd0e27);
+            
+
+            circle_marker_e8d4d2c3b3eb4e23a8e0d9820946dd4f.bindPopup(popup_edbccd0fc5584046b86e0f1cb9a90b3f)
+            ;
+
+            
+        
+    
+            var circle_marker_940f5eb9c81f433ab15968cdbaf72b85 = L.circleMarker(
+                [14.49028913, 78.69613871],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_b97b54b8c3934c088a8858241816a457 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5ca494406ac744889e03b41370e58cc9 = $(`<div id="html_5ca494406ac744889e03b41370e58cc9" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CUDDAPAH<br>                 Total Crimes : 278<br></div>`)[0];
+                popup_b97b54b8c3934c088a8858241816a457.setContent(html_5ca494406ac744889e03b41370e58cc9);
+            
+
+            circle_marker_940f5eb9c81f433ab15968cdbaf72b85.bindPopup(popup_b97b54b8c3934c088a8858241816a457)
+            ;
+
+            
+        
+    
+            var circle_marker_afd448e258f04ce69be985a770b12210 = L.circleMarker(
+                [16.78271832, 82.24320747],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_017fab5a47a54c20b0df4e6ec50ca49b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4a04a58f66374f99aee7c8d40bcdfe32 = $(`<div id="html_4a04a58f66374f99aee7c8d40bcdfe32" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : EAST GODAVARI<br>                 Total Crimes : 475<br></div>`)[0];
+                popup_017fab5a47a54c20b0df4e6ec50ca49b.setContent(html_4a04a58f66374f99aee7c8d40bcdfe32);
+            
+
+            circle_marker_afd448e258f04ce69be985a770b12210.bindPopup(popup_017fab5a47a54c20b0df4e6ec50ca49b)
+            ;
+
+            
+        
+    
+            var circle_marker_845928b1c9cf41388c9ded67ac99dd34 = L.circleMarker(
+                [15.1674, 77.3736],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_092345396a9c4977a4ac5d7bb864e46a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_40285b0494ef4afb9fd75256c51c9736 = $(`<div id="html_40285b0494ef4afb9fd75256c51c9736" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTAKAL RLY.<br>                 Total Crimes : 1<br></div>`)[0];
+                popup_092345396a9c4977a4ac5d7bb864e46a.setContent(html_40285b0494ef4afb9fd75256c51c9736);
+            
+
+            circle_marker_845928b1c9cf41388c9ded67ac99dd34.bindPopup(popup_092345396a9c4977a4ac5d7bb864e46a)
+            ;
+
+            
+        
+    
+            var circle_marker_52b1a71970ad46c7a47e4548b5dbb887 = L.circleMarker(
+                [15.88492577, 80.58657614],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_16e347ebd70f4a3883b6d9b3cd0d1ca1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d1084107b2be4965aa6ed0cf03899589 = $(`<div id="html_d1084107b2be4965aa6ed0cf03899589" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTUR<br>                 Total Crimes : 758<br></div>`)[0];
+                popup_16e347ebd70f4a3883b6d9b3cd0d1ca1.setContent(html_d1084107b2be4965aa6ed0cf03899589);
+            
+
+            circle_marker_52b1a71970ad46c7a47e4548b5dbb887.bindPopup(popup_16e347ebd70f4a3883b6d9b3cd0d1ca1)
+            ;
+
+            
+        
+    
+            var circle_marker_2ac5542b71924e9eb51557b1bffbe47f = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_16787a959266457aa4657df9f7552954 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_da9f1358e5fc485592356cff186234fc = $(`<div id="html_da9f1358e5fc485592356cff186234fc" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : HYDERABAD CITY<br>                 Total Crimes : 991<br></div>`)[0];
+                popup_16787a959266457aa4657df9f7552954.setContent(html_da9f1358e5fc485592356cff186234fc);
+            
+
+            circle_marker_2ac5542b71924e9eb51557b1bffbe47f.bindPopup(popup_16787a959266457aa4657df9f7552954)
+            ;
+
+            
+        
+    
+            var circle_marker_4a6355bb6b194cc5b2fc9560db4b6e96 = L.circleMarker(
+                [18.51548319, 79.43765429],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_38062b2453d142049b1ee20ab6df698c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ae62bb7b039a4641b80f5dbd83cc9fdf = $(`<div id="html_ae62bb7b039a4641b80f5dbd83cc9fdf" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KARIMNAGAR<br>                 Total Crimes : 886<br></div>`)[0];
+                popup_38062b2453d142049b1ee20ab6df698c.setContent(html_ae62bb7b039a4641b80f5dbd83cc9fdf);
+            
+
+            circle_marker_4a6355bb6b194cc5b2fc9560db4b6e96.bindPopup(popup_38062b2453d142049b1ee20ab6df698c)
+            ;
+
+            
+        
+    
+            var circle_marker_cbfac016cd244ebb898dcf20eb73b1e3 = L.circleMarker(
+                [17.68392133, 80.67008644],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_d0e7d08065744221badc1cf90c903582 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7806b041a0de4cb99eb5c4e26990034c = $(`<div id="html_7806b041a0de4cb99eb5c4e26990034c" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KHAMMAM<br>                 Total Crimes : 782<br></div>`)[0];
+                popup_d0e7d08065744221badc1cf90c903582.setContent(html_7806b041a0de4cb99eb5c4e26990034c);
+            
+
+            circle_marker_cbfac016cd244ebb898dcf20eb73b1e3.bindPopup(popup_d0e7d08065744221badc1cf90c903582)
+            ;
+
+            
+        
+    
+            var circle_marker_e061588e08d84bd89f6b50e8cb4151a5 = L.circleMarker(
+                [16.14387275, 81.14805061],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_37dda4bb17dc45c8ad51b3ed5701f02b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_83c451044b064de98eea2eacf6bba1cc = $(`<div id="html_83c451044b064de98eea2eacf6bba1cc" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KRISHNA<br>                 Total Crimes : 613<br></div>`)[0];
+                popup_37dda4bb17dc45c8ad51b3ed5701f02b.setContent(html_83c451044b064de98eea2eacf6bba1cc);
+            
+
+            circle_marker_e061588e08d84bd89f6b50e8cb4151a5.bindPopup(popup_37dda4bb17dc45c8ad51b3ed5701f02b)
+            ;
+
+            
+        
+    
+            var circle_marker_9307bc0a0b7541c2922b98b25006e465 = L.circleMarker(
+                [15.43759715, 77.90086837],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_0da23c4cd8034f2ca6f1ebdd66db1e9d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f60135150d3a4f7fa5608b3a0f45ba60 = $(`<div id="html_f60135150d3a4f7fa5608b3a0f45ba60" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KURNOOL<br>                 Total Crimes : 429<br></div>`)[0];
+                popup_0da23c4cd8034f2ca6f1ebdd66db1e9d.setContent(html_f60135150d3a4f7fa5608b3a0f45ba60);
+            
+
+            circle_marker_9307bc0a0b7541c2922b98b25006e465.bindPopup(popup_0da23c4cd8034f2ca6f1ebdd66db1e9d)
+            ;
+
+            
+        
+    
+            var circle_marker_eac21fd9bd814bfe96f9bb79710ea837 = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e5b0b39fbf004ab79c468e9872f6016d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a016c5931eb8497d97219d01532f763a = $(`<div id="html_a016c5931eb8497d97219d01532f763a" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MAHABOOBNAGAR<br>                 Total Crimes : 386<br></div>`)[0];
+                popup_e5b0b39fbf004ab79c468e9872f6016d.setContent(html_a016c5931eb8497d97219d01532f763a);
+            
+
+            circle_marker_eac21fd9bd814bfe96f9bb79710ea837.bindPopup(popup_e5b0b39fbf004ab79c468e9872f6016d)
+            ;
+
+            
+        
+    
+            var circle_marker_bcc8652b8658441ea5f80270e9c852d8 = L.circleMarker(
+                [17.88930498, 78.13778902],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_8fd328535386459f93f94b9c40aecd44 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8bc642d9800e486bbe273b7794f5b62a = $(`<div id="html_8bc642d9800e486bbe273b7794f5b62a" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MEDAK<br>                 Total Crimes : 398<br></div>`)[0];
+                popup_8fd328535386459f93f94b9c40aecd44.setContent(html_8bc642d9800e486bbe273b7794f5b62a);
+            
+
+            circle_marker_bcc8652b8658441ea5f80270e9c852d8.bindPopup(popup_8fd328535386459f93f94b9c40aecd44)
+            ;
+
+            
+        
+    
+            var circle_marker_5ce43a68a26c45a2bb4ee60332b9a015 = L.circleMarker(
+                [17.11325052, 79.16984454],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_c6ca70a9201d417a848109cf97a5e752 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a5f755c0a77942a196bb2fb0da567d53 = $(`<div id="html_a5f755c0a77942a196bb2fb0da567d53" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NALGONDA<br>                 Total Crimes : 546<br></div>`)[0];
+                popup_c6ca70a9201d417a848109cf97a5e752.setContent(html_a5f755c0a77942a196bb2fb0da567d53);
+            
+
+            circle_marker_5ce43a68a26c45a2bb4ee60332b9a015.bindPopup(popup_c6ca70a9201d417a848109cf97a5e752)
+            ;
+
+            
+        
+    
+            var circle_marker_abee2eb5676b41be8a98ebf5fff8c3aa = L.circleMarker(
+                [13.89434407, 80.14702672],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_ae89f4c00ac84891a210da352b51f115 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_65b0cc88d98e44e1a595fb335d177bf3 = $(`<div id="html_65b0cc88d98e44e1a595fb335d177bf3" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NELLORE<br>                 Total Crimes : 858<br></div>`)[0];
+                popup_ae89f4c00ac84891a210da352b51f115.setContent(html_65b0cc88d98e44e1a595fb335d177bf3);
+            
+
+            circle_marker_abee2eb5676b41be8a98ebf5fff8c3aa.bindPopup(popup_ae89f4c00ac84891a210da352b51f115)
+            ;
+
+            
+        
+    
+            var circle_marker_d2a18f83d5114442bf8e1fce575ecb6c = L.circleMarker(
+                [18.42948585, 78.07523491],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9e0dd1c4ca3e492288652cf7f0895e18 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8ad32740e6fd4040a262df1ff2f9c1d2 = $(`<div id="html_8ad32740e6fd4040a262df1ff2f9c1d2" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NIZAMABAD<br>                 Total Crimes : 359<br></div>`)[0];
+                popup_9e0dd1c4ca3e492288652cf7f0895e18.setContent(html_8ad32740e6fd4040a262df1ff2f9c1d2);
+            
+
+            circle_marker_d2a18f83d5114442bf8e1fce575ecb6c.bindPopup(popup_9e0dd1c4ca3e492288652cf7f0895e18)
+            ;
+
+            
+        
+    
+            var circle_marker_ed47e56cae08405bb1f4d48a4cd337c2 = L.circleMarker(
+                [15.489039000000002, 80.1166579],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_bfc905efbc1c415d8e6700b774593423 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fdfe24274080483b8da5bdf0cb0d855a = $(`<div id="html_fdfe24274080483b8da5bdf0cb0d855a" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : PRAKASHAM<br>                 Total Crimes : 395<br></div>`)[0];
+                popup_bfc905efbc1c415d8e6700b774593423.setContent(html_fdfe24274080483b8da5bdf0cb0d855a);
+            
+
+            circle_marker_ed47e56cae08405bb1f4d48a4cd337c2.bindPopup(popup_bfc905efbc1c415d8e6700b774593423)
+            ;
+
+            
+        
+    
+            var circle_marker_0f23529a036246dfbdee52579350cc30 = L.circleMarker(
+                [17.24523587, 78.05756828],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_44bc469c7257491d934271834a4bc4cc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7c9e7c2f7a5c46c493fab392375076ca = $(`<div id="html_7c9e7c2f7a5c46c493fab392375076ca" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : RANGA REDDY<br>                 Total Crimes : 788<br></div>`)[0];
+                popup_44bc469c7257491d934271834a4bc4cc.setContent(html_7c9e7c2f7a5c46c493fab392375076ca);
+            
+
+            circle_marker_0f23529a036246dfbdee52579350cc30.bindPopup(popup_44bc469c7257491d934271834a4bc4cc)
+            ;
+
+            
+        
+    
+            var circle_marker_847a99e7ea644d28a56a3fd1448f27f5 = L.circleMarker(
+                [17.4337, 78.5016],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_ae19979ee70a48279d2cb5670c81e1d6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_223fbc2131b947e1a7aa7d9bc37fd70a = $(`<div id="html_223fbc2131b947e1a7aa7d9bc37fd70a" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SECUNDERABAD RLY.<br>                 Total Crimes : 2<br></div>`)[0];
+                popup_ae19979ee70a48279d2cb5670c81e1d6.setContent(html_223fbc2131b947e1a7aa7d9bc37fd70a);
+            
+
+            circle_marker_847a99e7ea644d28a56a3fd1448f27f5.bindPopup(popup_ae19979ee70a48279d2cb5670c81e1d6)
+            ;
+
+            
+        
+    
+            var circle_marker_e6f3ab4b4ce548de85c2abcfa942b91b = L.circleMarker(
+                [18.570901, 84.25874814],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_58212c7968ac4e9c9d8c1b4fcd0f9067 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_775de90417ea4da388d7c6641bad740f = $(`<div id="html_775de90417ea4da388d7c6641bad740f" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SRIKAKULAM<br>                 Total Crimes : 219<br></div>`)[0];
+                popup_58212c7968ac4e9c9d8c1b4fcd0f9067.setContent(html_775de90417ea4da388d7c6641bad740f);
+            
+
+            circle_marker_e6f3ab4b4ce548de85c2abcfa942b91b.bindPopup(popup_58212c7968ac4e9c9d8c1b4fcd0f9067)
+            ;
+
+            
+        
+    
+            var circle_marker_fc3f1b870cc549f186345172d6263b08 = L.circleMarker(
+                [16.51928, 80.63049000000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_3a780f3871e448be9c2d657ddaa26e7a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_12a15366d9b94279a02f50bbc615bfe9 = $(`<div id="html_12a15366d9b94279a02f50bbc615bfe9" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA<br>                 Total Crimes : 801<br></div>`)[0];
+                popup_3a780f3871e448be9c2d657ddaa26e7a.setContent(html_12a15366d9b94279a02f50bbc615bfe9);
+            
+
+            circle_marker_fc3f1b870cc549f186345172d6263b08.bindPopup(popup_3a780f3871e448be9c2d657ddaa26e7a)
+            ;
+
+            
+        
+    
+            var circle_marker_c4c01a136ab54e8086cae0f78b58cb1e = L.circleMarker(
+                [16.5178, 80.6201],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e4b12a8628fe413299811fb2c161996f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_480b260b84324ec6ae03c2988a6b2f05 = $(`<div id="html_480b260b84324ec6ae03c2988a6b2f05" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA RLY.<br>                 Total Crimes : 3<br></div>`)[0];
+                popup_e4b12a8628fe413299811fb2c161996f.setContent(html_480b260b84324ec6ae03c2988a6b2f05);
+            
+
+            circle_marker_c4c01a136ab54e8086cae0f78b58cb1e.bindPopup(popup_e4b12a8628fe413299811fb2c161996f)
+            ;
+
+            
+        
+    
+            var circle_marker_48f1d35ca3b04f2681e6c09671b9d679 = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_a67c55d390f5485aa3284537f6b093b7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_61e466ea8ffc4d89b1f81cda4d93df5b = $(`<div id="html_61e466ea8ffc4d89b1f81cda4d93df5b" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHA RURAL<br>                 Total Crimes : 241<br></div>`)[0];
+                popup_a67c55d390f5485aa3284537f6b093b7.setContent(html_61e466ea8ffc4d89b1f81cda4d93df5b);
+            
+
+            circle_marker_48f1d35ca3b04f2681e6c09671b9d679.bindPopup(popup_a67c55d390f5485aa3284537f6b093b7)
+            ;
+
+            
+        
+    
+            var circle_marker_874d000fdb0c4bcc8110a0de53173630 = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9b361d24f1ec48cbb206de2182270be9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ef5172aa0c96443d9472ffcef8dc32e5 = $(`<div id="html_ef5172aa0c96443d9472ffcef8dc32e5" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHAPATNAM<br>                 Total Crimes : 718<br></div>`)[0];
+                popup_9b361d24f1ec48cbb206de2182270be9.setContent(html_ef5172aa0c96443d9472ffcef8dc32e5);
+            
+
+            circle_marker_874d000fdb0c4bcc8110a0de53173630.bindPopup(popup_9b361d24f1ec48cbb206de2182270be9)
+            ;
+
+            
+        
+    
+            var circle_marker_00bb2db1dad44d61969897a6795ecac3 = L.circleMarker(
+                [18.28329696, 83.45982854],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_11bce205409d4b7ab05d49566a680bf6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e375c55375774a57a26592864e4e592c = $(`<div id="html_e375c55375774a57a26592864e4e592c" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIZIANAGARAM<br>                 Total Crimes : 193<br></div>`)[0];
+                popup_11bce205409d4b7ab05d49566a680bf6.setContent(html_e375c55375774a57a26592864e4e592c);
+            
+
+            circle_marker_00bb2db1dad44d61969897a6795ecac3.bindPopup(popup_11bce205409d4b7ab05d49566a680bf6)
+            ;
+
+            
+        
+    
+            var circle_marker_7de9034e37d24d87a313018a27df6d76 = L.circleMarker(
+                [18.01752609, 79.87422029],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_beca37bc90774513ab30eecb2eea0e89 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_44ad960d93ca426290ff0e58cf99ccb1 = $(`<div id="html_44ad960d93ca426290ff0e58cf99ccb1" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WARANGAL<br>                 Total Crimes : 536<br></div>`)[0];
+                popup_beca37bc90774513ab30eecb2eea0e89.setContent(html_44ad960d93ca426290ff0e58cf99ccb1);
+            
+
+            circle_marker_7de9034e37d24d87a313018a27df6d76.bindPopup(popup_beca37bc90774513ab30eecb2eea0e89)
+            ;
+
+            
+        
+    
+            var circle_marker_bf3a2d05177b4af8818370809be7a5e2 = L.circleMarker(
+                [16.63297944, 81.45912991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_406cfcf3d8b34a288c636ff900ce2663 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3e5ce3a9598f4e8eaeb58c5547717f16 = $(`<div id="html_3e5ce3a9598f4e8eaeb58c5547717f16" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WEST GODAVARI<br>                 Total Crimes : 747<br></div>`)[0];
+                popup_406cfcf3d8b34a288c636ff900ce2663.setContent(html_3e5ce3a9598f4e8eaeb58c5547717f16);
+            
+
+            circle_marker_bf3a2d05177b4af8818370809be7a5e2.bindPopup(popup_406cfcf3d8b34a288c636ff900ce2663)
+            ;
+
+            
+        
+    
+            var circle_marker_718dfca9e398435ca48e675ed572bce4 = L.circleMarker(
+                [19.28451395, 78.81321233],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.088888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e6a9cebfc9c84e42979795915290924a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7381c347703b43a08c4a084ac4c8ec8e = $(`<div id="html_7381c347703b43a08c4a084ac4c8ec8e" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ADILABAD<br>                 Total Crimes : 454<br></div>`)[0];
+                popup_e6a9cebfc9c84e42979795915290924a.setContent(html_7381c347703b43a08c4a084ac4c8ec8e);
+            
+
+            circle_marker_718dfca9e398435ca48e675ed572bce4.bindPopup(popup_e6a9cebfc9c84e42979795915290924a)
+            ;
+
+            
+        
+    
+            var circle_marker_8b3f787d73784f6cac9a12ae57ee2345 = L.circleMarker(
+                [14.31206556, 77.46015845],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.911111111111111,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_5b6a102f08384898ae5cc26d4d923a3d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_18a6edecd5ec49b79114f574c0c51c01 = $(`<div id="html_18a6edecd5ec49b79114f574c0c51c01" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ANANTAPUR<br>                 Total Crimes : 356<br></div>`)[0];
+                popup_5b6a102f08384898ae5cc26d4d923a3d.setContent(html_18a6edecd5ec49b79114f574c0c51c01);
+            
+
+            circle_marker_8b3f787d73784f6cac9a12ae57ee2345.bindPopup(popup_5b6a102f08384898ae5cc26d4d923a3d)
+            ;
+
+            
+        
+    
+            var circle_marker_c555d8062fe14dc691768898db3342b9 = L.circleMarker(
+                [13.33109263, 78.92763899],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.133333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_6538212be7d147f68c4f9b2750e0c634 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_239ea5f44428411daa7db5d9b3600771 = $(`<div id="html_239ea5f44428411daa7db5d9b3600771" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CHITTOOR<br>                 Total Crimes : 456<br></div>`)[0];
+                popup_6538212be7d147f68c4f9b2750e0c634.setContent(html_239ea5f44428411daa7db5d9b3600771);
+            
+
+            circle_marker_c555d8062fe14dc691768898db3342b9.bindPopup(popup_6538212be7d147f68c4f9b2750e0c634)
+            ;
+
+            
+        
+    
+            var circle_marker_4278442a730c4c0995ef49c01a6bedfb = L.circleMarker(
+                [14.49028913, 78.69613871],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.177777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_5ba6c4fc263e47bc93d8c4732dc9e46d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3524f7edff584dfa99848dc7839ea893 = $(`<div id="html_3524f7edff584dfa99848dc7839ea893" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CUDDAPAH<br>                 Total Crimes : 278<br></div>`)[0];
+                popup_5ba6c4fc263e47bc93d8c4732dc9e46d.setContent(html_3524f7edff584dfa99848dc7839ea893);
+            
+
+            circle_marker_4278442a730c4c0995ef49c01a6bedfb.bindPopup(popup_5ba6c4fc263e47bc93d8c4732dc9e46d)
+            ;
+
+            
+        
+    
+            var circle_marker_41e43746b5844f0a86d015a3cef2ff46 = L.circleMarker(
+                [16.78271832, 82.24320747],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.555555555555555,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_83cb3fa0886e4070a7a7a14f9705e06c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7ecebfeffcec48c8a4687d96187e0921 = $(`<div id="html_7ecebfeffcec48c8a4687d96187e0921" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : EAST GODAVARI<br>                 Total Crimes : 475<br></div>`)[0];
+                popup_83cb3fa0886e4070a7a7a14f9705e06c.setContent(html_7ecebfeffcec48c8a4687d96187e0921);
+            
+
+            circle_marker_41e43746b5844f0a86d015a3cef2ff46.bindPopup(popup_83cb3fa0886e4070a7a7a14f9705e06c)
+            ;
+
+            
+        
+    
+            var circle_marker_2b9a3c07cf3143df93be7fe026ef90c3 = L.circleMarker(
+                [15.1674, 77.3736],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.022222222222222223,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_f250560c82054386bb1aa12f6cb7b5d9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_de373514e25348a4920da85eeb9ee36a = $(`<div id="html_de373514e25348a4920da85eeb9ee36a" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTAKAL RLY.<br>                 Total Crimes : 1<br></div>`)[0];
+                popup_f250560c82054386bb1aa12f6cb7b5d9.setContent(html_de373514e25348a4920da85eeb9ee36a);
+            
+
+            circle_marker_2b9a3c07cf3143df93be7fe026ef90c3.bindPopup(popup_f250560c82054386bb1aa12f6cb7b5d9)
+            ;
+
+            
+        
+    
+            var circle_marker_51d0b865fccd49fb91e848dca4720ae8 = L.circleMarker(
+                [15.88492577, 80.58657614],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.844444444444445,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_fc3e3f6f37b94ea28825f1371e7b46ce = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e0f288450763490c898ed4be495156d7 = $(`<div id="html_e0f288450763490c898ed4be495156d7" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTUR<br>                 Total Crimes : 758<br></div>`)[0];
+                popup_fc3e3f6f37b94ea28825f1371e7b46ce.setContent(html_e0f288450763490c898ed4be495156d7);
+            
+
+            circle_marker_51d0b865fccd49fb91e848dca4720ae8.bindPopup(popup_fc3e3f6f37b94ea28825f1371e7b46ce)
+            ;
+
+            
+        
+    
+            var circle_marker_2947dd2bb1174aebaaec6e133777101c = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 22.022222222222222,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_8d74ccd9d0c743179c660115b962545c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aee8bfbb6f6d44479730f6850ba72b7e = $(`<div id="html_aee8bfbb6f6d44479730f6850ba72b7e" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : HYDERABAD CITY<br>                 Total Crimes : 991<br></div>`)[0];
+                popup_8d74ccd9d0c743179c660115b962545c.setContent(html_aee8bfbb6f6d44479730f6850ba72b7e);
+            
+
+            circle_marker_2947dd2bb1174aebaaec6e133777101c.bindPopup(popup_8d74ccd9d0c743179c660115b962545c)
+            ;
+
+            
+        
+    
+            var circle_marker_b72b564d7ecd4f06833366debc7f4652 = L.circleMarker(
+                [18.51548319, 79.43765429],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.68888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9d077b5a27f4441493a2e39188d5df8a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0b6d1e3717b44a569fb4fceae1ec5df0 = $(`<div id="html_0b6d1e3717b44a569fb4fceae1ec5df0" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KARIMNAGAR<br>                 Total Crimes : 886<br></div>`)[0];
+                popup_9d077b5a27f4441493a2e39188d5df8a.setContent(html_0b6d1e3717b44a569fb4fceae1ec5df0);
+            
+
+            circle_marker_b72b564d7ecd4f06833366debc7f4652.bindPopup(popup_9d077b5a27f4441493a2e39188d5df8a)
+            ;
+
+            
+        
+    
+            var circle_marker_81f6ae46834948d68953e3b896310bc2 = L.circleMarker(
+                [17.68392133, 80.67008644],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.377777777777776,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_cc2887fa47064e5bac8b39b449c575c5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ee0b0068c8294b9fb77963cd83aef832 = $(`<div id="html_ee0b0068c8294b9fb77963cd83aef832" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KHAMMAM<br>                 Total Crimes : 782<br></div>`)[0];
+                popup_cc2887fa47064e5bac8b39b449c575c5.setContent(html_ee0b0068c8294b9fb77963cd83aef832);
+            
+
+            circle_marker_81f6ae46834948d68953e3b896310bc2.bindPopup(popup_cc2887fa47064e5bac8b39b449c575c5)
+            ;
+
+            
+        
+    
+            var circle_marker_fa8a1d8ab53f40259c5f563ad54be354 = L.circleMarker(
+                [16.14387275, 81.14805061],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.622222222222222,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_98e3634d1a1345d0b58a790c492275af = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e4dae1ebb9ba4bfb87e7298ffa1d4c4f = $(`<div id="html_e4dae1ebb9ba4bfb87e7298ffa1d4c4f" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KRISHNA<br>                 Total Crimes : 613<br></div>`)[0];
+                popup_98e3634d1a1345d0b58a790c492275af.setContent(html_e4dae1ebb9ba4bfb87e7298ffa1d4c4f);
+            
+
+            circle_marker_fa8a1d8ab53f40259c5f563ad54be354.bindPopup(popup_98e3634d1a1345d0b58a790c492275af)
+            ;
+
+            
+        
+    
+            var circle_marker_57b2d37e223345db851c444611bd8403 = L.circleMarker(
+                [15.43759715, 77.90086837],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.533333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_039d58e496344f2f915d677d7780c984 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8babba9c94fc4a34b4d2a156d6e3048c = $(`<div id="html_8babba9c94fc4a34b4d2a156d6e3048c" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KURNOOL<br>                 Total Crimes : 429<br></div>`)[0];
+                popup_039d58e496344f2f915d677d7780c984.setContent(html_8babba9c94fc4a34b4d2a156d6e3048c);
+            
+
+            circle_marker_57b2d37e223345db851c444611bd8403.bindPopup(popup_039d58e496344f2f915d677d7780c984)
+            ;
+
+            
+        
+    
+            var circle_marker_42989583cdf04d3c97154ca90466045c = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.577777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e1141e3c021b478490acbe15cbeac097 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2a4401fa283a4d9fa488fba0cb60ff05 = $(`<div id="html_2a4401fa283a4d9fa488fba0cb60ff05" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MAHABOOBNAGAR<br>                 Total Crimes : 386<br></div>`)[0];
+                popup_e1141e3c021b478490acbe15cbeac097.setContent(html_2a4401fa283a4d9fa488fba0cb60ff05);
+            
+
+            circle_marker_42989583cdf04d3c97154ca90466045c.bindPopup(popup_e1141e3c021b478490acbe15cbeac097)
+            ;
+
+            
+        
+    
+            var circle_marker_d96782e1c6e84c52b00aa00fb9fa2562 = L.circleMarker(
+                [17.88930498, 78.13778902],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.844444444444445,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_a41f0b2794234cf28adeed04cb46caed = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_29b319ce53f74fa3ade451ace582f36a = $(`<div id="html_29b319ce53f74fa3ade451ace582f36a" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MEDAK<br>                 Total Crimes : 398<br></div>`)[0];
+                popup_a41f0b2794234cf28adeed04cb46caed.setContent(html_29b319ce53f74fa3ade451ace582f36a);
+            
+
+            circle_marker_d96782e1c6e84c52b00aa00fb9fa2562.bindPopup(popup_a41f0b2794234cf28adeed04cb46caed)
+            ;
+
+            
+        
+    
+            var circle_marker_16aeda81be26489bbac72d2e8dfc7a97 = L.circleMarker(
+                [17.11325052, 79.16984454],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 12.133333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_af1b4fec28384f1d92effe56854268db = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_46e21c6788134fb980258b410f4daa9f = $(`<div id="html_46e21c6788134fb980258b410f4daa9f" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NALGONDA<br>                 Total Crimes : 546<br></div>`)[0];
+                popup_af1b4fec28384f1d92effe56854268db.setContent(html_46e21c6788134fb980258b410f4daa9f);
+            
+
+            circle_marker_16aeda81be26489bbac72d2e8dfc7a97.bindPopup(popup_af1b4fec28384f1d92effe56854268db)
+            ;
+
+            
+        
+    
+            var circle_marker_1e131cb95bcc4d639e0e0846cd52b3ef = L.circleMarker(
+                [13.89434407, 80.14702672],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.066666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_3511ca642c4c4b0588b11cc174eaa112 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6429e9082e834f2fa76b024a8589bc12 = $(`<div id="html_6429e9082e834f2fa76b024a8589bc12" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NELLORE<br>                 Total Crimes : 858<br></div>`)[0];
+                popup_3511ca642c4c4b0588b11cc174eaa112.setContent(html_6429e9082e834f2fa76b024a8589bc12);
+            
+
+            circle_marker_1e131cb95bcc4d639e0e0846cd52b3ef.bindPopup(popup_3511ca642c4c4b0588b11cc174eaa112)
+            ;
+
+            
+        
+    
+            var circle_marker_f0b7220e7fa64f5e9e04136fb8461bcd = L.circleMarker(
+                [18.42948585, 78.07523491],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.977777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9f5daa2a8c2f449fb20ffec32665a553 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c37176e20f044d59a22d51652be61534 = $(`<div id="html_c37176e20f044d59a22d51652be61534" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NIZAMABAD<br>                 Total Crimes : 359<br></div>`)[0];
+                popup_9f5daa2a8c2f449fb20ffec32665a553.setContent(html_c37176e20f044d59a22d51652be61534);
+            
+
+            circle_marker_f0b7220e7fa64f5e9e04136fb8461bcd.bindPopup(popup_9f5daa2a8c2f449fb20ffec32665a553)
+            ;
+
+            
+        
+    
+            var circle_marker_48ad22fbcb9a44bc9a2f56b6288a3816 = L.circleMarker(
+                [15.489039000000002, 80.1166579],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.777777777777779,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_2ca02af2c1fc4d3bbd2288ed773537e0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_34e1ee6e978042a6aba9f5eccdfabaa3 = $(`<div id="html_34e1ee6e978042a6aba9f5eccdfabaa3" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : PRAKASHAM<br>                 Total Crimes : 395<br></div>`)[0];
+                popup_2ca02af2c1fc4d3bbd2288ed773537e0.setContent(html_34e1ee6e978042a6aba9f5eccdfabaa3);
+            
+
+            circle_marker_48ad22fbcb9a44bc9a2f56b6288a3816.bindPopup(popup_2ca02af2c1fc4d3bbd2288ed773537e0)
+            ;
+
+            
+        
+    
+            var circle_marker_600cc87ea32b4668ba2300f2b347ace5 = L.circleMarker(
+                [17.24523587, 78.05756828],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.511111111111113,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_95bc230712fb4b40a611d4f3a294edc9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e2055f4e03544ab9bc6e2420a9b088df = $(`<div id="html_e2055f4e03544ab9bc6e2420a9b088df" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : RANGA REDDY<br>                 Total Crimes : 788<br></div>`)[0];
+                popup_95bc230712fb4b40a611d4f3a294edc9.setContent(html_e2055f4e03544ab9bc6e2420a9b088df);
+            
+
+            circle_marker_600cc87ea32b4668ba2300f2b347ace5.bindPopup(popup_95bc230712fb4b40a611d4f3a294edc9)
+            ;
+
+            
+        
+    
+            var circle_marker_89ba0f33baa142a0914300cb8a83ce39 = L.circleMarker(
+                [17.4337, 78.5016],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.044444444444444446,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_dffc35d7196f4d0bacbd433a5506a88a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_363d3c5212d24815a7d0c969abbebcc9 = $(`<div id="html_363d3c5212d24815a7d0c969abbebcc9" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SECUNDERABAD RLY.<br>                 Total Crimes : 2<br></div>`)[0];
+                popup_dffc35d7196f4d0bacbd433a5506a88a.setContent(html_363d3c5212d24815a7d0c969abbebcc9);
+            
+
+            circle_marker_89ba0f33baa142a0914300cb8a83ce39.bindPopup(popup_dffc35d7196f4d0bacbd433a5506a88a)
+            ;
+
+            
+        
+    
+            var circle_marker_10e7e72db0c44fafa2677e771a0af8dc = L.circleMarker(
+                [18.570901, 84.25874814],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.866666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_64b629ad5edc4a219dd0681b050cc853 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_651cc4592590470481138f16ee684e74 = $(`<div id="html_651cc4592590470481138f16ee684e74" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SRIKAKULAM<br>                 Total Crimes : 219<br></div>`)[0];
+                popup_64b629ad5edc4a219dd0681b050cc853.setContent(html_651cc4592590470481138f16ee684e74);
+            
+
+            circle_marker_10e7e72db0c44fafa2677e771a0af8dc.bindPopup(popup_64b629ad5edc4a219dd0681b050cc853)
+            ;
+
+            
+        
+    
+            var circle_marker_74eb373a9b654ecaa0a522805cfdabce = L.circleMarker(
+                [16.51928, 80.63049000000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.8,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_40b7f234603a49b58fea6d6b41ee61bd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fd63594d1ae349538bfa06fba916c8a7 = $(`<div id="html_fd63594d1ae349538bfa06fba916c8a7" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA<br>                 Total Crimes : 801<br></div>`)[0];
+                popup_40b7f234603a49b58fea6d6b41ee61bd.setContent(html_fd63594d1ae349538bfa06fba916c8a7);
+            
+
+            circle_marker_74eb373a9b654ecaa0a522805cfdabce.bindPopup(popup_40b7f234603a49b58fea6d6b41ee61bd)
+            ;
+
+            
+        
+    
+            var circle_marker_0aa1b15f2685440ebe90902545278850 = L.circleMarker(
+                [16.5178, 80.6201],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.06666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_96fa71921fb54bdbb2eccf2f325ed6b2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cf540b333e5b48e2b79c74abf7c6262f = $(`<div id="html_cf540b333e5b48e2b79c74abf7c6262f" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA RLY.<br>                 Total Crimes : 3<br></div>`)[0];
+                popup_96fa71921fb54bdbb2eccf2f325ed6b2.setContent(html_cf540b333e5b48e2b79c74abf7c6262f);
+            
+
+            circle_marker_0aa1b15f2685440ebe90902545278850.bindPopup(popup_96fa71921fb54bdbb2eccf2f325ed6b2)
+            ;
+
+            
+        
+    
+            var circle_marker_e65e70bcf074450f924a6f86a2983672 = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.355555555555555,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e8eb5cf5476f47cc980484bc28b287af = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9e6603a83faf4f0c8e6991f5b2f07c51 = $(`<div id="html_9e6603a83faf4f0c8e6991f5b2f07c51" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHA RURAL<br>                 Total Crimes : 241<br></div>`)[0];
+                popup_e8eb5cf5476f47cc980484bc28b287af.setContent(html_9e6603a83faf4f0c8e6991f5b2f07c51);
+            
+
+            circle_marker_e65e70bcf074450f924a6f86a2983672.bindPopup(popup_e8eb5cf5476f47cc980484bc28b287af)
+            ;
+
+            
+        
+    
+            var circle_marker_1760edaa4b3e4d29b65a731a9941ef80 = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.955555555555556,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9e94e5009c484171a5c4c74bb19ae9f7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c7895781f0e0464eb2fb58fd0f48e84b = $(`<div id="html_c7895781f0e0464eb2fb58fd0f48e84b" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHAPATNAM<br>                 Total Crimes : 718<br></div>`)[0];
+                popup_9e94e5009c484171a5c4c74bb19ae9f7.setContent(html_c7895781f0e0464eb2fb58fd0f48e84b);
+            
+
+            circle_marker_1760edaa4b3e4d29b65a731a9941ef80.bindPopup(popup_9e94e5009c484171a5c4c74bb19ae9f7)
+            ;
+
+            
+        
+    
+            var circle_marker_e163d2586e484aa888d506c4719287b3 = L.circleMarker(
+                [18.28329696, 83.45982854],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.288888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_d8253169ceaf4ac0be6ef8998a07ef30 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_533f8655dfa043e68f1661efd4f0e1d0 = $(`<div id="html_533f8655dfa043e68f1661efd4f0e1d0" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIZIANAGARAM<br>                 Total Crimes : 193<br></div>`)[0];
+                popup_d8253169ceaf4ac0be6ef8998a07ef30.setContent(html_533f8655dfa043e68f1661efd4f0e1d0);
+            
+
+            circle_marker_e163d2586e484aa888d506c4719287b3.bindPopup(popup_d8253169ceaf4ac0be6ef8998a07ef30)
+            ;
+
+            
+        
+    
+            var circle_marker_944aeb6e88b24ebf94ca1cc0402e332e = L.circleMarker(
+                [18.01752609, 79.87422029],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.911111111111111,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_97eac03a27374c4aaf8e53c6760cf81f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_86c388b1b12b41e88e9f7c5e46545fab = $(`<div id="html_86c388b1b12b41e88e9f7c5e46545fab" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WARANGAL<br>                 Total Crimes : 536<br></div>`)[0];
+                popup_97eac03a27374c4aaf8e53c6760cf81f.setContent(html_86c388b1b12b41e88e9f7c5e46545fab);
+            
+
+            circle_marker_944aeb6e88b24ebf94ca1cc0402e332e.bindPopup(popup_97eac03a27374c4aaf8e53c6760cf81f)
+            ;
+
+            
+        
+    
+            var circle_marker_af4627ac673a4551b3f733a64055074d = L.circleMarker(
+                [16.63297944, 81.45912991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_7bbb3f0c025c4d889c83cb0ab4ca0ba2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4a41060195b24d29a251ac4dba670f2b = $(`<div id="html_4a41060195b24d29a251ac4dba670f2b" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WEST GODAVARI<br>                 Total Crimes : 747<br></div>`)[0];
+                popup_7bbb3f0c025c4d889c83cb0ab4ca0ba2.setContent(html_4a41060195b24d29a251ac4dba670f2b);
+            
+
+            circle_marker_af4627ac673a4551b3f733a64055074d.bindPopup(popup_7bbb3f0c025c4d889c83cb0ab4ca0ba2)
+            ;
+
+            
+        
+    
+            var circle_marker_10e33b6ad1e54036b6015998c80f3cf9 = L.circleMarker(
+                [19.28451395, 78.81321233],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.088888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_27f7d947bfb548bb8c1f4fed0a38e971 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_caafc2fe557c494bb71b90c1c31e9fa5 = $(`<div id="html_caafc2fe557c494bb71b90c1c31e9fa5" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ADILABAD<br>                 Total Crimes : 454<br></div>`)[0];
+                popup_27f7d947bfb548bb8c1f4fed0a38e971.setContent(html_caafc2fe557c494bb71b90c1c31e9fa5);
+            
+
+            circle_marker_10e33b6ad1e54036b6015998c80f3cf9.bindPopup(popup_27f7d947bfb548bb8c1f4fed0a38e971)
+            ;
+
+            
+        
+    
+            var circle_marker_fd6bb24501e7423cbfecfcf1c2b560d0 = L.circleMarker(
+                [14.31206556, 77.46015845],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.911111111111111,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_3896d157536b4632aa818e34a9793aad = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_75777ddddcc54149a28e0cda0b0d7c8d = $(`<div id="html_75777ddddcc54149a28e0cda0b0d7c8d" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ANANTAPUR<br>                 Total Crimes : 356<br></div>`)[0];
+                popup_3896d157536b4632aa818e34a9793aad.setContent(html_75777ddddcc54149a28e0cda0b0d7c8d);
+            
+
+            circle_marker_fd6bb24501e7423cbfecfcf1c2b560d0.bindPopup(popup_3896d157536b4632aa818e34a9793aad)
+            ;
+
+            
+        
+    
+            var circle_marker_e6df80bd1438461281c17db524a10297 = L.circleMarker(
+                [13.33109263, 78.92763899],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.133333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_60495ccef6254b298221c23c208dd19f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_82412f35ad884eaf8ca5810b60b43f21 = $(`<div id="html_82412f35ad884eaf8ca5810b60b43f21" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CHITTOOR<br>                 Total Crimes : 456<br></div>`)[0];
+                popup_60495ccef6254b298221c23c208dd19f.setContent(html_82412f35ad884eaf8ca5810b60b43f21);
+            
+
+            circle_marker_e6df80bd1438461281c17db524a10297.bindPopup(popup_60495ccef6254b298221c23c208dd19f)
+            ;
+
+            
+        
+    
+            var circle_marker_c1c561529a44433bbecfdb07f17ec4cc = L.circleMarker(
+                [14.49028913, 78.69613871],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.177777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_042fafbf231946478195d21fac1984d5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_28c5f33fd8c14adaaa962662a3753c54 = $(`<div id="html_28c5f33fd8c14adaaa962662a3753c54" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CUDDAPAH<br>                 Total Crimes : 278<br></div>`)[0];
+                popup_042fafbf231946478195d21fac1984d5.setContent(html_28c5f33fd8c14adaaa962662a3753c54);
+            
+
+            circle_marker_c1c561529a44433bbecfdb07f17ec4cc.bindPopup(popup_042fafbf231946478195d21fac1984d5)
+            ;
+
+            
+        
+    
+            var circle_marker_599d455f4ae54dd789484026eb335b25 = L.circleMarker(
+                [16.78271832, 82.24320747],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.555555555555555,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_d7820dfb240445a38edf3026bacd403c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b93228708c254a7ab4a46a793a41a8ec = $(`<div id="html_b93228708c254a7ab4a46a793a41a8ec" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : EAST GODAVARI<br>                 Total Crimes : 475<br></div>`)[0];
+                popup_d7820dfb240445a38edf3026bacd403c.setContent(html_b93228708c254a7ab4a46a793a41a8ec);
+            
+
+            circle_marker_599d455f4ae54dd789484026eb335b25.bindPopup(popup_d7820dfb240445a38edf3026bacd403c)
+            ;
+
+            
+        
+    
+            var circle_marker_04a5f9fee7964c9cac224fbc6c065155 = L.circleMarker(
+                [15.1674, 77.3736],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.022222222222222223,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_28f841fed0ad4288b7da7d914c5ef91f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_81c0687afb95443ab774d6ed6a96d534 = $(`<div id="html_81c0687afb95443ab774d6ed6a96d534" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTAKAL RLY.<br>                 Total Crimes : 1<br></div>`)[0];
+                popup_28f841fed0ad4288b7da7d914c5ef91f.setContent(html_81c0687afb95443ab774d6ed6a96d534);
+            
+
+            circle_marker_04a5f9fee7964c9cac224fbc6c065155.bindPopup(popup_28f841fed0ad4288b7da7d914c5ef91f)
+            ;
+
+            
+        
+    
+            var circle_marker_21d0c6c26fe6495dbe742d4096b363b8 = L.circleMarker(
+                [15.88492577, 80.58657614],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.844444444444445,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_62eb135268da40ab9a5b12453550fa5d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6d354fa301cd4118afc6a6499da8646a = $(`<div id="html_6d354fa301cd4118afc6a6499da8646a" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTUR<br>                 Total Crimes : 758<br></div>`)[0];
+                popup_62eb135268da40ab9a5b12453550fa5d.setContent(html_6d354fa301cd4118afc6a6499da8646a);
+            
+
+            circle_marker_21d0c6c26fe6495dbe742d4096b363b8.bindPopup(popup_62eb135268da40ab9a5b12453550fa5d)
+            ;
+
+            
+        
+    
+            var circle_marker_6c9b79fc41a04dca8b5f5718c0f3c379 = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 22.022222222222222,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_aec408dbc51f4c8281467424fe28c19a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_05c0008b26b942e19cddcfd7ed227644 = $(`<div id="html_05c0008b26b942e19cddcfd7ed227644" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : HYDERABAD CITY<br>                 Total Crimes : 991<br></div>`)[0];
+                popup_aec408dbc51f4c8281467424fe28c19a.setContent(html_05c0008b26b942e19cddcfd7ed227644);
+            
+
+            circle_marker_6c9b79fc41a04dca8b5f5718c0f3c379.bindPopup(popup_aec408dbc51f4c8281467424fe28c19a)
+            ;
+
+            
+        
+    
+            var circle_marker_6bb974eff3334856a13fc12e825e67e5 = L.circleMarker(
+                [18.51548319, 79.43765429],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.68888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_5e3e5c1df9b84ed8adf4673ba0086877 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76fd6cac4c1c46e6850b9d7102e5f0a7 = $(`<div id="html_76fd6cac4c1c46e6850b9d7102e5f0a7" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KARIMNAGAR<br>                 Total Crimes : 886<br></div>`)[0];
+                popup_5e3e5c1df9b84ed8adf4673ba0086877.setContent(html_76fd6cac4c1c46e6850b9d7102e5f0a7);
+            
+
+            circle_marker_6bb974eff3334856a13fc12e825e67e5.bindPopup(popup_5e3e5c1df9b84ed8adf4673ba0086877)
+            ;
+
+            
+        
+    
+            var circle_marker_826a18d7c79b4a248d42dda1dee25297 = L.circleMarker(
+                [17.68392133, 80.67008644],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.377777777777776,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_1a3f0cae75464bb9805c27a690d08934 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_62cc7fc6091d47548e1ba2a87feadc82 = $(`<div id="html_62cc7fc6091d47548e1ba2a87feadc82" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KHAMMAM<br>                 Total Crimes : 782<br></div>`)[0];
+                popup_1a3f0cae75464bb9805c27a690d08934.setContent(html_62cc7fc6091d47548e1ba2a87feadc82);
+            
+
+            circle_marker_826a18d7c79b4a248d42dda1dee25297.bindPopup(popup_1a3f0cae75464bb9805c27a690d08934)
+            ;
+
+            
+        
+    
+            var circle_marker_3e3172c64d004e5f9ce651d1ea98d489 = L.circleMarker(
+                [16.14387275, 81.14805061],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.622222222222222,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e5a5ef79b8cc4e0e9030984593025229 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f1df84ef6c9f4878a8988f05aab50952 = $(`<div id="html_f1df84ef6c9f4878a8988f05aab50952" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KRISHNA<br>                 Total Crimes : 613<br></div>`)[0];
+                popup_e5a5ef79b8cc4e0e9030984593025229.setContent(html_f1df84ef6c9f4878a8988f05aab50952);
+            
+
+            circle_marker_3e3172c64d004e5f9ce651d1ea98d489.bindPopup(popup_e5a5ef79b8cc4e0e9030984593025229)
+            ;
+
+            
+        
+    
+            var circle_marker_a20b6c1cd34b48aead94c1696553c149 = L.circleMarker(
+                [15.43759715, 77.90086837],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.533333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_ec6525267f8e41fab86bdc64b07c9c00 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d087c6ba79f146c59e7eb5e468c60ce9 = $(`<div id="html_d087c6ba79f146c59e7eb5e468c60ce9" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KURNOOL<br>                 Total Crimes : 429<br></div>`)[0];
+                popup_ec6525267f8e41fab86bdc64b07c9c00.setContent(html_d087c6ba79f146c59e7eb5e468c60ce9);
+            
+
+            circle_marker_a20b6c1cd34b48aead94c1696553c149.bindPopup(popup_ec6525267f8e41fab86bdc64b07c9c00)
+            ;
+
+            
+        
+    
+            var circle_marker_220a4bb4d69e43039e4b512f458629ec = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.577777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_c41ef001d61b45d399f89ccc474a564d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4adea0b847754856b651ee97d32d6cf7 = $(`<div id="html_4adea0b847754856b651ee97d32d6cf7" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MAHABOOBNAGAR<br>                 Total Crimes : 386<br></div>`)[0];
+                popup_c41ef001d61b45d399f89ccc474a564d.setContent(html_4adea0b847754856b651ee97d32d6cf7);
+            
+
+            circle_marker_220a4bb4d69e43039e4b512f458629ec.bindPopup(popup_c41ef001d61b45d399f89ccc474a564d)
+            ;
+
+            
+        
+    
+            var circle_marker_c850566d49714f3ba65da951e6b9904f = L.circleMarker(
+                [17.88930498, 78.13778902],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.844444444444445,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_ae987ab55f0f4cee92d138f1f858a874 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9936b2bca35d4a9b9e8a881f57c4d1fd = $(`<div id="html_9936b2bca35d4a9b9e8a881f57c4d1fd" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MEDAK<br>                 Total Crimes : 398<br></div>`)[0];
+                popup_ae987ab55f0f4cee92d138f1f858a874.setContent(html_9936b2bca35d4a9b9e8a881f57c4d1fd);
+            
+
+            circle_marker_c850566d49714f3ba65da951e6b9904f.bindPopup(popup_ae987ab55f0f4cee92d138f1f858a874)
+            ;
+
+            
+        
+    
+            var circle_marker_399b8d86bac543f2825bcdcdafdc229a = L.circleMarker(
+                [17.11325052, 79.16984454],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 12.133333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_8da6bef44e94439499bd6bf1136a4919 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dc2ed161f0f044e0a8126e4846651015 = $(`<div id="html_dc2ed161f0f044e0a8126e4846651015" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NALGONDA<br>                 Total Crimes : 546<br></div>`)[0];
+                popup_8da6bef44e94439499bd6bf1136a4919.setContent(html_dc2ed161f0f044e0a8126e4846651015);
+            
+
+            circle_marker_399b8d86bac543f2825bcdcdafdc229a.bindPopup(popup_8da6bef44e94439499bd6bf1136a4919)
+            ;
+
+            
+        
+    
+            var circle_marker_e34d3994ba25412980849a1b0b43b261 = L.circleMarker(
+                [13.89434407, 80.14702672],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.066666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9f1375a3fb704fff81be7879b5504e3d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d2b4527392c8411fbb5512fc9f3fe914 = $(`<div id="html_d2b4527392c8411fbb5512fc9f3fe914" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NELLORE<br>                 Total Crimes : 858<br></div>`)[0];
+                popup_9f1375a3fb704fff81be7879b5504e3d.setContent(html_d2b4527392c8411fbb5512fc9f3fe914);
+            
+
+            circle_marker_e34d3994ba25412980849a1b0b43b261.bindPopup(popup_9f1375a3fb704fff81be7879b5504e3d)
+            ;
+
+            
+        
+    
+            var circle_marker_56a901e1a18a4ff4bc376b7285fb447e = L.circleMarker(
+                [18.42948585, 78.07523491],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.977777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_d552d6e11a6a4d7294c820ba458ca7d9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2d79a72bde2142a8bce34bf255ecc588 = $(`<div id="html_2d79a72bde2142a8bce34bf255ecc588" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NIZAMABAD<br>                 Total Crimes : 359<br></div>`)[0];
+                popup_d552d6e11a6a4d7294c820ba458ca7d9.setContent(html_2d79a72bde2142a8bce34bf255ecc588);
+            
+
+            circle_marker_56a901e1a18a4ff4bc376b7285fb447e.bindPopup(popup_d552d6e11a6a4d7294c820ba458ca7d9)
+            ;
+
+            
+        
+    
+            var circle_marker_3fb09840913042ca8e3d945c7526e9c7 = L.circleMarker(
+                [15.489039000000002, 80.1166579],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.777777777777779,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_150cf0be84824d57bf303ec02ebf9f6c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3ff852b562cd4dd1a38a30bdc95918b9 = $(`<div id="html_3ff852b562cd4dd1a38a30bdc95918b9" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : PRAKASHAM<br>                 Total Crimes : 395<br></div>`)[0];
+                popup_150cf0be84824d57bf303ec02ebf9f6c.setContent(html_3ff852b562cd4dd1a38a30bdc95918b9);
+            
+
+            circle_marker_3fb09840913042ca8e3d945c7526e9c7.bindPopup(popup_150cf0be84824d57bf303ec02ebf9f6c)
+            ;
+
+            
+        
+    
+            var circle_marker_d93597b6c4d248d589059b02a0ed2e65 = L.circleMarker(
+                [17.24523587, 78.05756828],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.511111111111113,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_70b75517d9b545d894bee41efd55c14e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7254c2068d4a4722bf118e83313da81d = $(`<div id="html_7254c2068d4a4722bf118e83313da81d" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : RANGA REDDY<br>                 Total Crimes : 788<br></div>`)[0];
+                popup_70b75517d9b545d894bee41efd55c14e.setContent(html_7254c2068d4a4722bf118e83313da81d);
+            
+
+            circle_marker_d93597b6c4d248d589059b02a0ed2e65.bindPopup(popup_70b75517d9b545d894bee41efd55c14e)
+            ;
+
+            
+        
+    
+            var circle_marker_335715a10ca14ac59096eb0d92b4bb49 = L.circleMarker(
+                [17.4337, 78.5016],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.044444444444444446,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_2b3f3447d34447f59515fb3324318f0d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f2cdc28faa4646feaa3ce1a01fab0ab1 = $(`<div id="html_f2cdc28faa4646feaa3ce1a01fab0ab1" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SECUNDERABAD RLY.<br>                 Total Crimes : 2<br></div>`)[0];
+                popup_2b3f3447d34447f59515fb3324318f0d.setContent(html_f2cdc28faa4646feaa3ce1a01fab0ab1);
+            
+
+            circle_marker_335715a10ca14ac59096eb0d92b4bb49.bindPopup(popup_2b3f3447d34447f59515fb3324318f0d)
+            ;
+
+            
+        
+    
+            var circle_marker_5f51bfe5009646729e24e1758a27c0d1 = L.circleMarker(
+                [18.570901, 84.25874814],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.866666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_56fe24606b7b4dffbfb751de5f6daa4a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_14d6f5e941a2426086e17b66c1282309 = $(`<div id="html_14d6f5e941a2426086e17b66c1282309" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SRIKAKULAM<br>                 Total Crimes : 219<br></div>`)[0];
+                popup_56fe24606b7b4dffbfb751de5f6daa4a.setContent(html_14d6f5e941a2426086e17b66c1282309);
+            
+
+            circle_marker_5f51bfe5009646729e24e1758a27c0d1.bindPopup(popup_56fe24606b7b4dffbfb751de5f6daa4a)
+            ;
+
+            
+        
+    
+            var circle_marker_88a7952aab5b44dc83fe27b78fb1adfc = L.circleMarker(
+                [16.51928, 80.63049000000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.8,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e2c9cbb97e0449cf8c66bc0de31b5925 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_25350a858ec044fb9edd5359102a5296 = $(`<div id="html_25350a858ec044fb9edd5359102a5296" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA<br>                 Total Crimes : 801<br></div>`)[0];
+                popup_e2c9cbb97e0449cf8c66bc0de31b5925.setContent(html_25350a858ec044fb9edd5359102a5296);
+            
+
+            circle_marker_88a7952aab5b44dc83fe27b78fb1adfc.bindPopup(popup_e2c9cbb97e0449cf8c66bc0de31b5925)
+            ;
+
+            
+        
+    
+            var circle_marker_11789c1201324e9daf45d5d3ba36708d = L.circleMarker(
+                [16.5178, 80.6201],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.06666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e5d2b8e7e4bc46dcab18df23bb0e8431 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_acce56414fa1445585d1e93519820bd6 = $(`<div id="html_acce56414fa1445585d1e93519820bd6" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA RLY.<br>                 Total Crimes : 3<br></div>`)[0];
+                popup_e5d2b8e7e4bc46dcab18df23bb0e8431.setContent(html_acce56414fa1445585d1e93519820bd6);
+            
+
+            circle_marker_11789c1201324e9daf45d5d3ba36708d.bindPopup(popup_e5d2b8e7e4bc46dcab18df23bb0e8431)
+            ;
+
+            
+        
+    
+            var circle_marker_a713a577cafa4681b4e1d9e00cb47aa4 = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.355555555555555,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_a631afbe35a348b8a59e109ea20b1bd0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c5c1f2704abb40619c056f485c7ff2c3 = $(`<div id="html_c5c1f2704abb40619c056f485c7ff2c3" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHA RURAL<br>                 Total Crimes : 241<br></div>`)[0];
+                popup_a631afbe35a348b8a59e109ea20b1bd0.setContent(html_c5c1f2704abb40619c056f485c7ff2c3);
+            
+
+            circle_marker_a713a577cafa4681b4e1d9e00cb47aa4.bindPopup(popup_a631afbe35a348b8a59e109ea20b1bd0)
+            ;
+
+            
+        
+    
+            var circle_marker_249cf0f921f74d1796c844c0d92db9bf = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.955555555555556,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_ce4eecae530e45dbbecd246fe664da11 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_998cb2d65e5c48239928b91873a92f1c = $(`<div id="html_998cb2d65e5c48239928b91873a92f1c" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHAPATNAM<br>                 Total Crimes : 718<br></div>`)[0];
+                popup_ce4eecae530e45dbbecd246fe664da11.setContent(html_998cb2d65e5c48239928b91873a92f1c);
+            
+
+            circle_marker_249cf0f921f74d1796c844c0d92db9bf.bindPopup(popup_ce4eecae530e45dbbecd246fe664da11)
+            ;
+
+            
+        
+    
+            var circle_marker_d8292e60ba48436aa3c7723087063ad6 = L.circleMarker(
+                [18.28329696, 83.45982854],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.288888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_a91afd42677842d09b72b608fca803c7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f54035d9657241648e52208c0bc271c9 = $(`<div id="html_f54035d9657241648e52208c0bc271c9" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIZIANAGARAM<br>                 Total Crimes : 193<br></div>`)[0];
+                popup_a91afd42677842d09b72b608fca803c7.setContent(html_f54035d9657241648e52208c0bc271c9);
+            
+
+            circle_marker_d8292e60ba48436aa3c7723087063ad6.bindPopup(popup_a91afd42677842d09b72b608fca803c7)
+            ;
+
+            
+        
+    
+            var circle_marker_d3e2707a27264c568625b06b12ac670b = L.circleMarker(
+                [18.01752609, 79.87422029],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.911111111111111,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_65d9c2b8bee146a8bdef110241c978e7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d989d74bcdf84a3dadb8ba5634181b1f = $(`<div id="html_d989d74bcdf84a3dadb8ba5634181b1f" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WARANGAL<br>                 Total Crimes : 536<br></div>`)[0];
+                popup_65d9c2b8bee146a8bdef110241c978e7.setContent(html_d989d74bcdf84a3dadb8ba5634181b1f);
+            
+
+            circle_marker_d3e2707a27264c568625b06b12ac670b.bindPopup(popup_65d9c2b8bee146a8bdef110241c978e7)
+            ;
+
+            
+        
+    
+            var circle_marker_d75552e6099b40949ac332581083440d = L.circleMarker(
+                [16.63297944, 81.45912991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_f9f9925210804412a214e2a666a0378f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e5185e619f6c4f368312a9b776fc073f = $(`<div id="html_e5185e619f6c4f368312a9b776fc073f" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WEST GODAVARI<br>                 Total Crimes : 747<br></div>`)[0];
+                popup_f9f9925210804412a214e2a666a0378f.setContent(html_e5185e619f6c4f368312a9b776fc073f);
+            
+
+            circle_marker_d75552e6099b40949ac332581083440d.bindPopup(popup_f9f9925210804412a214e2a666a0378f)
+            ;
+
+            
+        
+    
+            var circle_marker_63b998738ce6416080d97125e5ca68eb = L.circleMarker(
+                [19.28451395, 78.81321233],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.088888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_816d3f15eef74e2085b976f0c521d2c5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_099f11dbe4a043ceb68672e70e5480e4 = $(`<div id="html_099f11dbe4a043ceb68672e70e5480e4" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ADILABAD<br>                 Total Crimes : 454<br></div>`)[0];
+                popup_816d3f15eef74e2085b976f0c521d2c5.setContent(html_099f11dbe4a043ceb68672e70e5480e4);
+            
+
+            circle_marker_63b998738ce6416080d97125e5ca68eb.bindPopup(popup_816d3f15eef74e2085b976f0c521d2c5)
+            ;
+
+            
+        
+    
+            var circle_marker_34572425de354a269d8bf2634c9dc941 = L.circleMarker(
+                [14.31206556, 77.46015845],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.911111111111111,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_d3e1dc68eb3d4fe599a332fc90d18abd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5cb274af07104aa1a70215e1e20f3cd8 = $(`<div id="html_5cb274af07104aa1a70215e1e20f3cd8" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ANANTAPUR<br>                 Total Crimes : 356<br></div>`)[0];
+                popup_d3e1dc68eb3d4fe599a332fc90d18abd.setContent(html_5cb274af07104aa1a70215e1e20f3cd8);
+            
+
+            circle_marker_34572425de354a269d8bf2634c9dc941.bindPopup(popup_d3e1dc68eb3d4fe599a332fc90d18abd)
+            ;
+
+            
+        
+    
+            var circle_marker_bc0ea4682a76441e965f48c27595d95f = L.circleMarker(
+                [13.33109263, 78.92763899],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.133333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_a84266c2e31a402683c288debe848e28 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_44d31ea3b325477797cfeb57d25c7123 = $(`<div id="html_44d31ea3b325477797cfeb57d25c7123" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CHITTOOR<br>                 Total Crimes : 456<br></div>`)[0];
+                popup_a84266c2e31a402683c288debe848e28.setContent(html_44d31ea3b325477797cfeb57d25c7123);
+            
+
+            circle_marker_bc0ea4682a76441e965f48c27595d95f.bindPopup(popup_a84266c2e31a402683c288debe848e28)
+            ;
+
+            
+        
+    
+            var circle_marker_4059bc41194d4bbfaf1e316bf41c0854 = L.circleMarker(
+                [14.49028913, 78.69613871],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.177777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9850ad1f68984303a7baaca86ac6e577 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6ce9aac5557a4eaf929d02c39d31c8cc = $(`<div id="html_6ce9aac5557a4eaf929d02c39d31c8cc" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CUDDAPAH<br>                 Total Crimes : 278<br></div>`)[0];
+                popup_9850ad1f68984303a7baaca86ac6e577.setContent(html_6ce9aac5557a4eaf929d02c39d31c8cc);
+            
+
+            circle_marker_4059bc41194d4bbfaf1e316bf41c0854.bindPopup(popup_9850ad1f68984303a7baaca86ac6e577)
+            ;
+
+            
+        
+    
+            var circle_marker_caa970c632b049bd9caf31677d201e09 = L.circleMarker(
+                [16.78271832, 82.24320747],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.555555555555555,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e58eaebfd2a34f7fb99d13bca525b88b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a1e5608ed4804fcc8318406ef810be41 = $(`<div id="html_a1e5608ed4804fcc8318406ef810be41" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : EAST GODAVARI<br>                 Total Crimes : 475<br></div>`)[0];
+                popup_e58eaebfd2a34f7fb99d13bca525b88b.setContent(html_a1e5608ed4804fcc8318406ef810be41);
+            
+
+            circle_marker_caa970c632b049bd9caf31677d201e09.bindPopup(popup_e58eaebfd2a34f7fb99d13bca525b88b)
+            ;
+
+            
+        
+    
+            var circle_marker_d58ad76edb994b909e5a85874f0fc66e = L.circleMarker(
+                [15.1674, 77.3736],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.022222222222222223,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_8b8c9e4905044355b1f273df4daff5bf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8b69ea4245ee4227944d6f70435f38db = $(`<div id="html_8b69ea4245ee4227944d6f70435f38db" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTAKAL RLY.<br>                 Total Crimes : 1<br></div>`)[0];
+                popup_8b8c9e4905044355b1f273df4daff5bf.setContent(html_8b69ea4245ee4227944d6f70435f38db);
+            
+
+            circle_marker_d58ad76edb994b909e5a85874f0fc66e.bindPopup(popup_8b8c9e4905044355b1f273df4daff5bf)
+            ;
+
+            
+        
+    
+            var circle_marker_58b968bf92684d08b733427d0293148d = L.circleMarker(
+                [15.88492577, 80.58657614],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.844444444444445,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9d0fa7bcebe44237a2927963cb1b835e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f2997c09867a4ba1a86ff6b3cb54e452 = $(`<div id="html_f2997c09867a4ba1a86ff6b3cb54e452" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTUR<br>                 Total Crimes : 758<br></div>`)[0];
+                popup_9d0fa7bcebe44237a2927963cb1b835e.setContent(html_f2997c09867a4ba1a86ff6b3cb54e452);
+            
+
+            circle_marker_58b968bf92684d08b733427d0293148d.bindPopup(popup_9d0fa7bcebe44237a2927963cb1b835e)
+            ;
+
+            
+        
+    
+            var circle_marker_33b65deb4a3749f895ffd04cac2c5b4a = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 22.022222222222222,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_879cb337d280409a8982aa7adddfeb87 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_10a2e4f12f594c3ba32cc01822f38c45 = $(`<div id="html_10a2e4f12f594c3ba32cc01822f38c45" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : HYDERABAD CITY<br>                 Total Crimes : 991<br></div>`)[0];
+                popup_879cb337d280409a8982aa7adddfeb87.setContent(html_10a2e4f12f594c3ba32cc01822f38c45);
+            
+
+            circle_marker_33b65deb4a3749f895ffd04cac2c5b4a.bindPopup(popup_879cb337d280409a8982aa7adddfeb87)
+            ;
+
+            
+        
+    
+            var circle_marker_e1cfb42c8a204f51825c14e4138fe95a = L.circleMarker(
+                [18.51548319, 79.43765429],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.68888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_3a02ed465cb34822b217202b99ab9cdf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eaa2d273f15343a8a6274eb894691866 = $(`<div id="html_eaa2d273f15343a8a6274eb894691866" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KARIMNAGAR<br>                 Total Crimes : 886<br></div>`)[0];
+                popup_3a02ed465cb34822b217202b99ab9cdf.setContent(html_eaa2d273f15343a8a6274eb894691866);
+            
+
+            circle_marker_e1cfb42c8a204f51825c14e4138fe95a.bindPopup(popup_3a02ed465cb34822b217202b99ab9cdf)
+            ;
+
+            
+        
+    
+            var circle_marker_1c279ecf4e2b45b2ac2b8fcefbf6f7e6 = L.circleMarker(
+                [17.68392133, 80.67008644],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.377777777777776,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_af5cc852520e42dcac39ae3c4d6216d1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f552607aa85b4554b92765f0bc6059a6 = $(`<div id="html_f552607aa85b4554b92765f0bc6059a6" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KHAMMAM<br>                 Total Crimes : 782<br></div>`)[0];
+                popup_af5cc852520e42dcac39ae3c4d6216d1.setContent(html_f552607aa85b4554b92765f0bc6059a6);
+            
+
+            circle_marker_1c279ecf4e2b45b2ac2b8fcefbf6f7e6.bindPopup(popup_af5cc852520e42dcac39ae3c4d6216d1)
+            ;
+
+            
+        
+    
+            var circle_marker_d4faa4b2504c4dfe8fadffe448b3ce85 = L.circleMarker(
+                [16.14387275, 81.14805061],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.622222222222222,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_b5feaa3845be4b97af8cb864684c3b74 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c5d415a9d9c54fceac95ae0581ea1178 = $(`<div id="html_c5d415a9d9c54fceac95ae0581ea1178" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KRISHNA<br>                 Total Crimes : 613<br></div>`)[0];
+                popup_b5feaa3845be4b97af8cb864684c3b74.setContent(html_c5d415a9d9c54fceac95ae0581ea1178);
+            
+
+            circle_marker_d4faa4b2504c4dfe8fadffe448b3ce85.bindPopup(popup_b5feaa3845be4b97af8cb864684c3b74)
+            ;
+
+            
+        
+    
+            var circle_marker_c25464ea6bae482aa22797f8956435f6 = L.circleMarker(
+                [15.43759715, 77.90086837],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.533333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9f12f3a869e942738e820c760bed4301 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3b986d97f51a41a6adec21638ab96195 = $(`<div id="html_3b986d97f51a41a6adec21638ab96195" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KURNOOL<br>                 Total Crimes : 429<br></div>`)[0];
+                popup_9f12f3a869e942738e820c760bed4301.setContent(html_3b986d97f51a41a6adec21638ab96195);
+            
+
+            circle_marker_c25464ea6bae482aa22797f8956435f6.bindPopup(popup_9f12f3a869e942738e820c760bed4301)
+            ;
+
+            
+        
+    
+            var circle_marker_ad3e5370a55d452792c42fa0ec9daea9 = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.577777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_821667aac88848159ea4efe734d77a81 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_860eb56aaab4407b93751ce2606a25a4 = $(`<div id="html_860eb56aaab4407b93751ce2606a25a4" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MAHABOOBNAGAR<br>                 Total Crimes : 386<br></div>`)[0];
+                popup_821667aac88848159ea4efe734d77a81.setContent(html_860eb56aaab4407b93751ce2606a25a4);
+            
+
+            circle_marker_ad3e5370a55d452792c42fa0ec9daea9.bindPopup(popup_821667aac88848159ea4efe734d77a81)
+            ;
+
+            
+        
+    
+            var circle_marker_5c04a6786b444842b34b278bab7edaff = L.circleMarker(
+                [17.88930498, 78.13778902],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.844444444444445,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_454d1ca0cfbc42dca48910d8764974b3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2059032921c44f4dae468c065edf493b = $(`<div id="html_2059032921c44f4dae468c065edf493b" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MEDAK<br>                 Total Crimes : 398<br></div>`)[0];
+                popup_454d1ca0cfbc42dca48910d8764974b3.setContent(html_2059032921c44f4dae468c065edf493b);
+            
+
+            circle_marker_5c04a6786b444842b34b278bab7edaff.bindPopup(popup_454d1ca0cfbc42dca48910d8764974b3)
+            ;
+
+            
+        
+    
+            var circle_marker_e01a45dbf7dd44b7a9246e6c7ea8b869 = L.circleMarker(
+                [17.11325052, 79.16984454],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 12.133333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_1f114cb2b4c446b4a71489bc40005b8c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1a442a5ac53b4c70aa98e6aba35718cf = $(`<div id="html_1a442a5ac53b4c70aa98e6aba35718cf" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NALGONDA<br>                 Total Crimes : 546<br></div>`)[0];
+                popup_1f114cb2b4c446b4a71489bc40005b8c.setContent(html_1a442a5ac53b4c70aa98e6aba35718cf);
+            
+
+            circle_marker_e01a45dbf7dd44b7a9246e6c7ea8b869.bindPopup(popup_1f114cb2b4c446b4a71489bc40005b8c)
+            ;
+
+            
+        
+    
+            var circle_marker_15cf2736bc704afcbb4ab261a8896697 = L.circleMarker(
+                [13.89434407, 80.14702672],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.066666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_dd43b24b05fe4431ae30fba5910e69b2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e74dacaf6a1d47b4b8d007d7e189327e = $(`<div id="html_e74dacaf6a1d47b4b8d007d7e189327e" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NELLORE<br>                 Total Crimes : 858<br></div>`)[0];
+                popup_dd43b24b05fe4431ae30fba5910e69b2.setContent(html_e74dacaf6a1d47b4b8d007d7e189327e);
+            
+
+            circle_marker_15cf2736bc704afcbb4ab261a8896697.bindPopup(popup_dd43b24b05fe4431ae30fba5910e69b2)
+            ;
+
+            
+        
+    
+            var circle_marker_6d50bed3c1514e07ac9a405bc334e9a6 = L.circleMarker(
+                [18.42948585, 78.07523491],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.977777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_1752334c15374fee99a9a3e1e4672205 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4a8850c5de074343bdbc2595382af63f = $(`<div id="html_4a8850c5de074343bdbc2595382af63f" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NIZAMABAD<br>                 Total Crimes : 359<br></div>`)[0];
+                popup_1752334c15374fee99a9a3e1e4672205.setContent(html_4a8850c5de074343bdbc2595382af63f);
+            
+
+            circle_marker_6d50bed3c1514e07ac9a405bc334e9a6.bindPopup(popup_1752334c15374fee99a9a3e1e4672205)
+            ;
+
+            
+        
+    
+            var circle_marker_0dd312e8ed5f4eb7993c4ee36118bcad = L.circleMarker(
+                [15.489039000000002, 80.1166579],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.777777777777779,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_8ee91ae699974d3f8ff983df15442863 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b4c5253fd5db4563ba5b9496cc2656dd = $(`<div id="html_b4c5253fd5db4563ba5b9496cc2656dd" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : PRAKASHAM<br>                 Total Crimes : 395<br></div>`)[0];
+                popup_8ee91ae699974d3f8ff983df15442863.setContent(html_b4c5253fd5db4563ba5b9496cc2656dd);
+            
+
+            circle_marker_0dd312e8ed5f4eb7993c4ee36118bcad.bindPopup(popup_8ee91ae699974d3f8ff983df15442863)
+            ;
+
+            
+        
+    
+            var circle_marker_89eb97c3d28b44e2b7cbaab10c439358 = L.circleMarker(
+                [17.24523587, 78.05756828],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.511111111111113,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_1deb7088d5b04919a86642725b24571a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1fec0a18e0494596a952fee7e4c1f4ea = $(`<div id="html_1fec0a18e0494596a952fee7e4c1f4ea" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : RANGA REDDY<br>                 Total Crimes : 788<br></div>`)[0];
+                popup_1deb7088d5b04919a86642725b24571a.setContent(html_1fec0a18e0494596a952fee7e4c1f4ea);
+            
+
+            circle_marker_89eb97c3d28b44e2b7cbaab10c439358.bindPopup(popup_1deb7088d5b04919a86642725b24571a)
+            ;
+
+            
+        
+    
+            var circle_marker_cede863246b54820a720a76a5122c83f = L.circleMarker(
+                [17.4337, 78.5016],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.044444444444444446,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_66dc5de7544e413fa5795f9096f5f938 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7ad9cd534bd44a8896b5992451d157b5 = $(`<div id="html_7ad9cd534bd44a8896b5992451d157b5" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SECUNDERABAD RLY.<br>                 Total Crimes : 2<br></div>`)[0];
+                popup_66dc5de7544e413fa5795f9096f5f938.setContent(html_7ad9cd534bd44a8896b5992451d157b5);
+            
+
+            circle_marker_cede863246b54820a720a76a5122c83f.bindPopup(popup_66dc5de7544e413fa5795f9096f5f938)
+            ;
+
+            
+        
+    
+            var circle_marker_2a785cf6fa624ea4b199048d16d4db17 = L.circleMarker(
+                [18.570901, 84.25874814],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.866666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_812d31997e454b7183c8ac65fd19ba97 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f9d4746a48ec48ff8d847f5a40587808 = $(`<div id="html_f9d4746a48ec48ff8d847f5a40587808" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SRIKAKULAM<br>                 Total Crimes : 219<br></div>`)[0];
+                popup_812d31997e454b7183c8ac65fd19ba97.setContent(html_f9d4746a48ec48ff8d847f5a40587808);
+            
+
+            circle_marker_2a785cf6fa624ea4b199048d16d4db17.bindPopup(popup_812d31997e454b7183c8ac65fd19ba97)
+            ;
+
+            
+        
+    
+            var circle_marker_03662df80df943148a6e0e7c1b4d1ee7 = L.circleMarker(
+                [16.51928, 80.63049000000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.8,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_9c59a81e1f704d939f1f7112e114b64e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4c4b84996d8142a2bd4065dd563b35d2 = $(`<div id="html_4c4b84996d8142a2bd4065dd563b35d2" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA<br>                 Total Crimes : 801<br></div>`)[0];
+                popup_9c59a81e1f704d939f1f7112e114b64e.setContent(html_4c4b84996d8142a2bd4065dd563b35d2);
+            
+
+            circle_marker_03662df80df943148a6e0e7c1b4d1ee7.bindPopup(popup_9c59a81e1f704d939f1f7112e114b64e)
+            ;
+
+            
+        
+    
+            var circle_marker_fb862c2995aa43c2b2f18eb13f647840 = L.circleMarker(
+                [16.5178, 80.6201],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.06666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_88efc39fe8a244d89b1b7320f1ef1b79 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_503ba5d12c994e26b68ee96fec90a3c1 = $(`<div id="html_503ba5d12c994e26b68ee96fec90a3c1" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA RLY.<br>                 Total Crimes : 3<br></div>`)[0];
+                popup_88efc39fe8a244d89b1b7320f1ef1b79.setContent(html_503ba5d12c994e26b68ee96fec90a3c1);
+            
+
+            circle_marker_fb862c2995aa43c2b2f18eb13f647840.bindPopup(popup_88efc39fe8a244d89b1b7320f1ef1b79)
+            ;
+
+            
+        
+    
+            var circle_marker_1de02bc025fa41d7bd752cf26e3f9421 = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.355555555555555,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_1fd19d7768ef45289404eb65a2672f46 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5f188acbcd8b41e595bb3afd09ac1b1e = $(`<div id="html_5f188acbcd8b41e595bb3afd09ac1b1e" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHA RURAL<br>                 Total Crimes : 241<br></div>`)[0];
+                popup_1fd19d7768ef45289404eb65a2672f46.setContent(html_5f188acbcd8b41e595bb3afd09ac1b1e);
+            
+
+            circle_marker_1de02bc025fa41d7bd752cf26e3f9421.bindPopup(popup_1fd19d7768ef45289404eb65a2672f46)
+            ;
+
+            
+        
+    
+            var circle_marker_3abc087d012642228b2e7dde8633bb37 = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.955555555555556,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_dd44159e07b341ccb70114a5f32e491a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_45608d7b259044cf8af94c9a02068a90 = $(`<div id="html_45608d7b259044cf8af94c9a02068a90" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHAPATNAM<br>                 Total Crimes : 718<br></div>`)[0];
+                popup_dd44159e07b341ccb70114a5f32e491a.setContent(html_45608d7b259044cf8af94c9a02068a90);
+            
+
+            circle_marker_3abc087d012642228b2e7dde8633bb37.bindPopup(popup_dd44159e07b341ccb70114a5f32e491a)
+            ;
+
+            
+        
+    
+            var circle_marker_79330bca040e40c4be145dfc320932d6 = L.circleMarker(
+                [18.28329696, 83.45982854],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.288888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_06dcd2a6ef9f41ae952c0e8cc3968544 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a88962ae8320451a99569c9adf698eef = $(`<div id="html_a88962ae8320451a99569c9adf698eef" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIZIANAGARAM<br>                 Total Crimes : 193<br></div>`)[0];
+                popup_06dcd2a6ef9f41ae952c0e8cc3968544.setContent(html_a88962ae8320451a99569c9adf698eef);
+            
+
+            circle_marker_79330bca040e40c4be145dfc320932d6.bindPopup(popup_06dcd2a6ef9f41ae952c0e8cc3968544)
+            ;
+
+            
+        
+    
+            var circle_marker_151d86d8ae4b456a85c8b0f421792c05 = L.circleMarker(
+                [18.01752609, 79.87422029],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.911111111111111,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_c9d4d9516d9d41a3bb3160d404b39781 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2aacbecd049b4a01911b763d8a85f8de = $(`<div id="html_2aacbecd049b4a01911b763d8a85f8de" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WARANGAL<br>                 Total Crimes : 536<br></div>`)[0];
+                popup_c9d4d9516d9d41a3bb3160d404b39781.setContent(html_2aacbecd049b4a01911b763d8a85f8de);
+            
+
+            circle_marker_151d86d8ae4b456a85c8b0f421792c05.bindPopup(popup_c9d4d9516d9d41a3bb3160d404b39781)
+            ;
+
+            
+        
+    
+            var circle_marker_087fb42f5ded433cba26c489dbf65bbd = L.circleMarker(
+                [16.63297944, 81.45912991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_1019e2c6f08143a5a0afe1a89dc94279 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8b5cbcc4b82c4b92ab8ee4b02841a5ba = $(`<div id="html_8b5cbcc4b82c4b92ab8ee4b02841a5ba" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WEST GODAVARI<br>                 Total Crimes : 747<br></div>`)[0];
+                popup_1019e2c6f08143a5a0afe1a89dc94279.setContent(html_8b5cbcc4b82c4b92ab8ee4b02841a5ba);
+            
+
+            circle_marker_087fb42f5ded433cba26c489dbf65bbd.bindPopup(popup_1019e2c6f08143a5a0afe1a89dc94279)
+            ;
+
+            
+        
+    
+            var circle_marker_483da6d7302743129c291ea6945d8e86 = L.circleMarker(
+                [19.28451395, 78.81321233],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.088888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_855236f1fee14b74bb0b0718dce1b243 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_070c2f94fd9943f0b394778cc776fcdf = $(`<div id="html_070c2f94fd9943f0b394778cc776fcdf" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ADILABAD<br>                 Total Crimes : 454<br></div>`)[0];
+                popup_855236f1fee14b74bb0b0718dce1b243.setContent(html_070c2f94fd9943f0b394778cc776fcdf);
+            
+
+            circle_marker_483da6d7302743129c291ea6945d8e86.bindPopup(popup_855236f1fee14b74bb0b0718dce1b243)
+            ;
+
+            
+        
+    
+            var circle_marker_451ffc33d74f41148620172ba8dba60a = L.circleMarker(
+                [14.31206556, 77.46015845],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.911111111111111,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_a93a18f01d774c2bb24d9eae8c5bde1f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ffdeaaea67ce4b6c91cc56bf72657dee = $(`<div id="html_ffdeaaea67ce4b6c91cc56bf72657dee" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : ANANTAPUR<br>                 Total Crimes : 356<br></div>`)[0];
+                popup_a93a18f01d774c2bb24d9eae8c5bde1f.setContent(html_ffdeaaea67ce4b6c91cc56bf72657dee);
+            
+
+            circle_marker_451ffc33d74f41148620172ba8dba60a.bindPopup(popup_a93a18f01d774c2bb24d9eae8c5bde1f)
+            ;
+
+            
+        
+    
+            var circle_marker_467fb0ed935042c5918fd96ebec8f9f0 = L.circleMarker(
+                [13.33109263, 78.92763899],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.133333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_2596246708d3498d9e9e9ae1a79a2c2a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8464e5de7ef74c039c3147fde8048c14 = $(`<div id="html_8464e5de7ef74c039c3147fde8048c14" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CHITTOOR<br>                 Total Crimes : 456<br></div>`)[0];
+                popup_2596246708d3498d9e9e9ae1a79a2c2a.setContent(html_8464e5de7ef74c039c3147fde8048c14);
+            
+
+            circle_marker_467fb0ed935042c5918fd96ebec8f9f0.bindPopup(popup_2596246708d3498d9e9e9ae1a79a2c2a)
+            ;
+
+            
+        
+    
+            var circle_marker_e6a144dae73049de966a193992ddd30e = L.circleMarker(
+                [14.49028913, 78.69613871],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.177777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_6f734b3453b946219a2afb841ccb5c7b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ec9b1a90870647a48ea07737fbaf622b = $(`<div id="html_ec9b1a90870647a48ea07737fbaf622b" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : CUDDAPAH<br>                 Total Crimes : 278<br></div>`)[0];
+                popup_6f734b3453b946219a2afb841ccb5c7b.setContent(html_ec9b1a90870647a48ea07737fbaf622b);
+            
+
+            circle_marker_e6a144dae73049de966a193992ddd30e.bindPopup(popup_6f734b3453b946219a2afb841ccb5c7b)
+            ;
+
+            
+        
+    
+            var circle_marker_9f64d0e1b4b446adab2d5e4ceb0e9c40 = L.circleMarker(
+                [16.78271832, 82.24320747],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.555555555555555,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_bfa8897d12ff4a8da62e06d00207cbfb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f880d278d97043dc8b5698d50f29186f = $(`<div id="html_f880d278d97043dc8b5698d50f29186f" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : EAST GODAVARI<br>                 Total Crimes : 475<br></div>`)[0];
+                popup_bfa8897d12ff4a8da62e06d00207cbfb.setContent(html_f880d278d97043dc8b5698d50f29186f);
+            
+
+            circle_marker_9f64d0e1b4b446adab2d5e4ceb0e9c40.bindPopup(popup_bfa8897d12ff4a8da62e06d00207cbfb)
+            ;
+
+            
+        
+    
+            var circle_marker_13b2b5e2ca474ee0a078d5146d5ff5cc = L.circleMarker(
+                [15.1674, 77.3736],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.022222222222222223,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_f8e1391db83e456c96c1d61bfc25ffda = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_93ac6ba146074fb782ec5f58fde593c1 = $(`<div id="html_93ac6ba146074fb782ec5f58fde593c1" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTAKAL RLY.<br>                 Total Crimes : 1<br></div>`)[0];
+                popup_f8e1391db83e456c96c1d61bfc25ffda.setContent(html_93ac6ba146074fb782ec5f58fde593c1);
+            
+
+            circle_marker_13b2b5e2ca474ee0a078d5146d5ff5cc.bindPopup(popup_f8e1391db83e456c96c1d61bfc25ffda)
+            ;
+
+            
+        
+    
+            var circle_marker_8dab168ace8c4fa0ba4a6275e17cf72b = L.circleMarker(
+                [15.88492577, 80.58657614],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.844444444444445,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_b91a7dedce084912ba8ebe9870558220 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_92334449c2214b6daa3fd114b4469ed2 = $(`<div id="html_92334449c2214b6daa3fd114b4469ed2" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : GUNTUR<br>                 Total Crimes : 758<br></div>`)[0];
+                popup_b91a7dedce084912ba8ebe9870558220.setContent(html_92334449c2214b6daa3fd114b4469ed2);
+            
+
+            circle_marker_8dab168ace8c4fa0ba4a6275e17cf72b.bindPopup(popup_b91a7dedce084912ba8ebe9870558220)
+            ;
+
+            
+        
+    
+            var circle_marker_de3f5d120796446fa808754ae551f9d9 = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 22.022222222222222,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_5831f59aae1e42cc970e5377d8ca9cd9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_47350c8fadab40a2ae1cc7b6b198548e = $(`<div id="html_47350c8fadab40a2ae1cc7b6b198548e" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : HYDERABAD CITY<br>                 Total Crimes : 991<br></div>`)[0];
+                popup_5831f59aae1e42cc970e5377d8ca9cd9.setContent(html_47350c8fadab40a2ae1cc7b6b198548e);
+            
+
+            circle_marker_de3f5d120796446fa808754ae551f9d9.bindPopup(popup_5831f59aae1e42cc970e5377d8ca9cd9)
+            ;
+
+            
+        
+    
+            var circle_marker_6043a7d571d645d0a3b77b4e65f7eca1 = L.circleMarker(
+                [18.51548319, 79.43765429],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.68888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_e896111011c74edc9ca5ab794e385890 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9cf1f787e3cb4f38bf2211f2b19ee7fa = $(`<div id="html_9cf1f787e3cb4f38bf2211f2b19ee7fa" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KARIMNAGAR<br>                 Total Crimes : 886<br></div>`)[0];
+                popup_e896111011c74edc9ca5ab794e385890.setContent(html_9cf1f787e3cb4f38bf2211f2b19ee7fa);
+            
+
+            circle_marker_6043a7d571d645d0a3b77b4e65f7eca1.bindPopup(popup_e896111011c74edc9ca5ab794e385890)
+            ;
+
+            
+        
+    
+            var circle_marker_99212aaaa6c84a28afb60f06a269ef09 = L.circleMarker(
+                [17.68392133, 80.67008644],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.377777777777776,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_ea7afac01ede424795b376c51e140f1d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c54baf223dd2404da2d3521469a27b51 = $(`<div id="html_c54baf223dd2404da2d3521469a27b51" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KHAMMAM<br>                 Total Crimes : 782<br></div>`)[0];
+                popup_ea7afac01ede424795b376c51e140f1d.setContent(html_c54baf223dd2404da2d3521469a27b51);
+            
+
+            circle_marker_99212aaaa6c84a28afb60f06a269ef09.bindPopup(popup_ea7afac01ede424795b376c51e140f1d)
+            ;
+
+            
+        
+    
+            var circle_marker_5ae2e9d002a7497e8393aafe52cad3bf = L.circleMarker(
+                [16.14387275, 81.14805061],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 13.622222222222222,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_27e018b97d914487a051c3b9c1e529d9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7f40aedabc00443ca4fff97f474e73f8 = $(`<div id="html_7f40aedabc00443ca4fff97f474e73f8" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KRISHNA<br>                 Total Crimes : 613<br></div>`)[0];
+                popup_27e018b97d914487a051c3b9c1e529d9.setContent(html_7f40aedabc00443ca4fff97f474e73f8);
+            
+
+            circle_marker_5ae2e9d002a7497e8393aafe52cad3bf.bindPopup(popup_27e018b97d914487a051c3b9c1e529d9)
+            ;
+
+            
+        
+    
+            var circle_marker_c36d3fa46d554e008d34ec2c7711fe29 = L.circleMarker(
+                [15.43759715, 77.90086837],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.533333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_39436c74700648e1be9606a96944a253 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_13a64906a17a4c499eeee96bb65786bb = $(`<div id="html_13a64906a17a4c499eeee96bb65786bb" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : KURNOOL<br>                 Total Crimes : 429<br></div>`)[0];
+                popup_39436c74700648e1be9606a96944a253.setContent(html_13a64906a17a4c499eeee96bb65786bb);
+            
+
+            circle_marker_c36d3fa46d554e008d34ec2c7711fe29.bindPopup(popup_39436c74700648e1be9606a96944a253)
+            ;
+
+            
+        
+    
+            var circle_marker_5fbd5963c6bb47a781f747dd9cd6cd41 = L.circleMarker(
+                [16.63954622, 77.98933089],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.577777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_15ce958495e24693aeb5cd98536ec424 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_faba569eec8d444fbf7a67b20b817099 = $(`<div id="html_faba569eec8d444fbf7a67b20b817099" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MAHABOOBNAGAR<br>                 Total Crimes : 386<br></div>`)[0];
+                popup_15ce958495e24693aeb5cd98536ec424.setContent(html_faba569eec8d444fbf7a67b20b817099);
+            
+
+            circle_marker_5fbd5963c6bb47a781f747dd9cd6cd41.bindPopup(popup_15ce958495e24693aeb5cd98536ec424)
+            ;
+
+            
+        
+    
+            var circle_marker_f806a79d033b4af490fe9327d45b7c6d = L.circleMarker(
+                [17.88930498, 78.13778902],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.844444444444445,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_35a6ca7624be4868a2e050649d7b59d4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a922b8a3cb0e41cbad9d656c68872976 = $(`<div id="html_a922b8a3cb0e41cbad9d656c68872976" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : MEDAK<br>                 Total Crimes : 398<br></div>`)[0];
+                popup_35a6ca7624be4868a2e050649d7b59d4.setContent(html_a922b8a3cb0e41cbad9d656c68872976);
+            
+
+            circle_marker_f806a79d033b4af490fe9327d45b7c6d.bindPopup(popup_35a6ca7624be4868a2e050649d7b59d4)
+            ;
+
+            
+        
+    
+            var circle_marker_c0c4da1ecd764040b736cd5e3743c2ad = L.circleMarker(
+                [17.11325052, 79.16984454],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 12.133333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_f292be78612a4414afae4efbabf1c40d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_50073792ffdd4b9e99a8996a5c5ad893 = $(`<div id="html_50073792ffdd4b9e99a8996a5c5ad893" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NALGONDA<br>                 Total Crimes : 546<br></div>`)[0];
+                popup_f292be78612a4414afae4efbabf1c40d.setContent(html_50073792ffdd4b9e99a8996a5c5ad893);
+            
+
+            circle_marker_c0c4da1ecd764040b736cd5e3743c2ad.bindPopup(popup_f292be78612a4414afae4efbabf1c40d)
+            ;
+
+            
+        
+    
+            var circle_marker_578d760b58074d25b44647c3819a97c8 = L.circleMarker(
+                [13.89434407, 80.14702672],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.066666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_a3196133dfa9468284084820be480ce6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5112340f3f244b1fac2d6f4be30e3a4c = $(`<div id="html_5112340f3f244b1fac2d6f4be30e3a4c" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NELLORE<br>                 Total Crimes : 858<br></div>`)[0];
+                popup_a3196133dfa9468284084820be480ce6.setContent(html_5112340f3f244b1fac2d6f4be30e3a4c);
+            
+
+            circle_marker_578d760b58074d25b44647c3819a97c8.bindPopup(popup_a3196133dfa9468284084820be480ce6)
+            ;
+
+            
+        
+    
+            var circle_marker_23734007c2b544d3a972edd6d2faac45 = L.circleMarker(
+                [18.42948585, 78.07523491],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.977777777777778,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_62a20cd424cd434489cb81c21dbce66a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_32170e62142e47e5a1686c4f17b697df = $(`<div id="html_32170e62142e47e5a1686c4f17b697df" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : NIZAMABAD<br>                 Total Crimes : 359<br></div>`)[0];
+                popup_62a20cd424cd434489cb81c21dbce66a.setContent(html_32170e62142e47e5a1686c4f17b697df);
+            
+
+            circle_marker_23734007c2b544d3a972edd6d2faac45.bindPopup(popup_62a20cd424cd434489cb81c21dbce66a)
+            ;
+
+            
+        
+    
+            var circle_marker_1295b3335fa749ee86e6e45f0c80c955 = L.circleMarker(
+                [15.489039000000002, 80.1166579],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8.777777777777779,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_1ec6f3dc13e74253a4827e3c3fbd9b91 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7328dd3b1e7a40cc827fb20c83ed6d6c = $(`<div id="html_7328dd3b1e7a40cc827fb20c83ed6d6c" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : PRAKASHAM<br>                 Total Crimes : 395<br></div>`)[0];
+                popup_1ec6f3dc13e74253a4827e3c3fbd9b91.setContent(html_7328dd3b1e7a40cc827fb20c83ed6d6c);
+            
+
+            circle_marker_1295b3335fa749ee86e6e45f0c80c955.bindPopup(popup_1ec6f3dc13e74253a4827e3c3fbd9b91)
+            ;
+
+            
+        
+    
+            var circle_marker_bdc92836449d4169a8e3bd60ec70daca = L.circleMarker(
+                [17.24523587, 78.05756828],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.511111111111113,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_a57b9ed0e095425cacb05c68da371b92 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e40b7c46e0ab4e309f31131e9b02c9e6 = $(`<div id="html_e40b7c46e0ab4e309f31131e9b02c9e6" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : RANGA REDDY<br>                 Total Crimes : 788<br></div>`)[0];
+                popup_a57b9ed0e095425cacb05c68da371b92.setContent(html_e40b7c46e0ab4e309f31131e9b02c9e6);
+            
+
+            circle_marker_bdc92836449d4169a8e3bd60ec70daca.bindPopup(popup_a57b9ed0e095425cacb05c68da371b92)
+            ;
+
+            
+        
+    
+            var circle_marker_a45f3b9e2784454a9732d1ed77608f8e = L.circleMarker(
+                [17.4337, 78.5016],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.044444444444444446,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_f580c0f267ec4a16a9cc8b4d50c4302c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9e4f355733e646ccbae41e75bb3763a2 = $(`<div id="html_9e4f355733e646ccbae41e75bb3763a2" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SECUNDERABAD RLY.<br>                 Total Crimes : 2<br></div>`)[0];
+                popup_f580c0f267ec4a16a9cc8b4d50c4302c.setContent(html_9e4f355733e646ccbae41e75bb3763a2);
+            
+
+            circle_marker_a45f3b9e2784454a9732d1ed77608f8e.bindPopup(popup_f580c0f267ec4a16a9cc8b4d50c4302c)
+            ;
+
+            
+        
+    
+            var circle_marker_7495dae359b94cda9ad048a9c4e8d4d0 = L.circleMarker(
+                [18.570901, 84.25874814],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.866666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_ad1ebd45e5944931bc77a6bafc008bf1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_28f13e3b302640008ec78b45eca47e8d = $(`<div id="html_28f13e3b302640008ec78b45eca47e8d" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : SRIKAKULAM<br>                 Total Crimes : 219<br></div>`)[0];
+                popup_ad1ebd45e5944931bc77a6bafc008bf1.setContent(html_28f13e3b302640008ec78b45eca47e8d);
+            
+
+            circle_marker_7495dae359b94cda9ad048a9c4e8d4d0.bindPopup(popup_ad1ebd45e5944931bc77a6bafc008bf1)
+            ;
+
+            
+        
+    
+            var circle_marker_bfba4176520643eeb1e17d162b9d0a3f = L.circleMarker(
+                [16.51928, 80.63049000000002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.8,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_0d6211aa2bbb438a8e2d9c287ef649f0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e7ef17cfe90e4ae092ff7b3835485dfe = $(`<div id="html_e7ef17cfe90e4ae092ff7b3835485dfe" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA<br>                 Total Crimes : 801<br></div>`)[0];
+                popup_0d6211aa2bbb438a8e2d9c287ef649f0.setContent(html_e7ef17cfe90e4ae092ff7b3835485dfe);
+            
+
+            circle_marker_bfba4176520643eeb1e17d162b9d0a3f.bindPopup(popup_0d6211aa2bbb438a8e2d9c287ef649f0)
+            ;
+
+            
+        
+    
+            var circle_marker_068ceffe3984482892caa8cf6e3e68ee = L.circleMarker(
+                [16.5178, 80.6201],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.06666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_0790107c07824306a6e858ba74ecee2f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_23bda3e3f1324b21939ce471b4c14c17 = $(`<div id="html_23bda3e3f1324b21939ce471b4c14c17" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIJAYAWADA RLY.<br>                 Total Crimes : 3<br></div>`)[0];
+                popup_0790107c07824306a6e858ba74ecee2f.setContent(html_23bda3e3f1324b21939ce471b4c14c17);
+            
+
+            circle_marker_068ceffe3984482892caa8cf6e3e68ee.bindPopup(popup_0790107c07824306a6e858ba74ecee2f)
+            ;
+
+            
+        
+    
+            var circle_marker_0b864800c1144ca193f94dc4a8bc66b6 = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.355555555555555,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_d80f15123973405fba1d04c6398c0f71 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_09a1ee82489e4dba9be8a1865d4d70c8 = $(`<div id="html_09a1ee82489e4dba9be8a1865d4d70c8" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHA RURAL<br>                 Total Crimes : 241<br></div>`)[0];
+                popup_d80f15123973405fba1d04c6398c0f71.setContent(html_09a1ee82489e4dba9be8a1865d4d70c8);
+            
+
+            circle_marker_0b864800c1144ca193f94dc4a8bc66b6.bindPopup(popup_d80f15123973405fba1d04c6398c0f71)
+            ;
+
+            
+        
+    
+            var circle_marker_4e99071f8c144f359d1f279e743cbd16 = L.circleMarker(
+                [17.64683903, 83.01014036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.955555555555556,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_8c4e9d147a1f45bd8e9c7f58ee127ce6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bd7683ce3a6742489518a60e7f915e81 = $(`<div id="html_bd7683ce3a6742489518a60e7f915e81" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VISAKHAPATNAM<br>                 Total Crimes : 718<br></div>`)[0];
+                popup_8c4e9d147a1f45bd8e9c7f58ee127ce6.setContent(html_bd7683ce3a6742489518a60e7f915e81);
+            
+
+            circle_marker_4e99071f8c144f359d1f279e743cbd16.bindPopup(popup_8c4e9d147a1f45bd8e9c7f58ee127ce6)
+            ;
+
+            
+        
+    
+            var circle_marker_bcdfc74ae80344b38b23abb6789de0a7 = L.circleMarker(
+                [18.28329696, 83.45982854],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.288888888888889,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_4ac9afde492d4a1fadfaf6d6535c30d4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_328ee6d106794c48a11f7300dfc16acc = $(`<div id="html_328ee6d106794c48a11f7300dfc16acc" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : VIZIANAGARAM<br>                 Total Crimes : 193<br></div>`)[0];
+                popup_4ac9afde492d4a1fadfaf6d6535c30d4.setContent(html_328ee6d106794c48a11f7300dfc16acc);
+            
+
+            circle_marker_bcdfc74ae80344b38b23abb6789de0a7.bindPopup(popup_4ac9afde492d4a1fadfaf6d6535c30d4)
+            ;
+
+            
+        
+    
+            var circle_marker_3a224a67888b4adcb5d70553c070b827 = L.circleMarker(
+                [18.01752609, 79.87422029],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#008080",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#008080",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 11.911111111111111,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_4318609a2880496584bc5fa7c4b44073 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_89fafbeb42b24489a1f41b2b9b3fcd0e = $(`<div id="html_89fafbeb42b24489a1f41b2b9b3fcd0e" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WARANGAL<br>                 Total Crimes : 536<br></div>`)[0];
+                popup_4318609a2880496584bc5fa7c4b44073.setContent(html_89fafbeb42b24489a1f41b2b9b3fcd0e);
+            
+
+            circle_marker_3a224a67888b4adcb5d70553c070b827.bindPopup(popup_4318609a2880496584bc5fa7c4b44073)
+            ;
+
+            
+        
+    
+            var circle_marker_2aeaaf0086004f58af81670882de8640 = L.circleMarker(
+                [16.63297944, 81.45912991],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#FF4500",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#FF4500",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_20de6771ac3c478aa57efbb1b6da762e);
+            
+    
+            var popup_cc1751fade7d4a9689fe097b4bd45017 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9ad7343a660e499aaf836f58aaa2e49d = $(`<div id="html_9ad7343a660e499aaf836f58aaa2e49d" style="width: 100.0%; height: 100.0%;">Year : 2001<br>                     District : WEST GODAVARI<br>                 Total Crimes : 747<br></div>`)[0];
+                popup_cc1751fade7d4a9689fe097b4bd45017.setContent(html_9ad7343a660e499aaf836f58aaa2e49d);
+            
+
+            circle_marker_2aeaaf0086004f58af81670882de8640.bindPopup(popup_cc1751fade7d4a9689fe097b4bd45017)
+            ;
+
+            
+        
+</script>
